@@ -1,3 +1,8 @@
+$gris : #37517e;
+$azul : #0c2e8a;
+$agua : #50d8af;
+$blanco : #fff;
+$negro : #000;
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -9,7 +14,7 @@
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: $blanco;
 }
 
 #preloader:before {
@@ -17,9 +22,9 @@
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #37517e;
-  border-top-color: #fff;
-  border-bottom-color: #fff;
+  border: 6px solid $gris;
+  border-top-color: $blanco;
+  border-bottom-color: $blanco;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -49,8 +54,8 @@
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0c2e8a;
-  color: #fff;
+  background: $azul;
+  color: $blanco;
   padding: 6px 12px 9px 12px;
   font-size: 16px;
   border-radius: 2px;
@@ -66,96 +71,96 @@
 }
 
 .back-to-top:focus {
-  background: #50d8af;
-  color: #fff;
+  background: $agua;
+  color: $blanco;
   outline: none;
 }
 
 .back-to-top:hover {
-  background: #50d8af;
-  color: #fff;
+  background: $agua;
+  color: $blanco;
 }
 
+
+//texto del banner y transparencia
 #intro {
-  width: 100%;
-  height: 70vh;
-  position: relative;
-  background-color: blueviolet;
-  background: url(../../src/images/banner.png) no-repeat center;
-  background-size: cover;
-  padding: 0;
+	width: 100%;
+	height: 70vh ;
+	position: relative;
+	background-color: blueviolet;
+	background: url(../../src/images/banner.png) no-repeat center ;
+	background-size: cover ;
+	padding: 0;
 }
-
 #intro #intro-carousel::before {
-  content: '';
-  background-color: rgba(255, 255, 255, 0.021);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: 7;
+	content: '';
+	background-color: rgba(255, 255, 255, 0.021);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 7;
 }
 
 #intro .intro-content h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 64px;
-  font-weight: 700;
+	color: $blanco;
+	margin-bottom: 30px;
+	font-size: 64px;
+	font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-  color: #50d8af;
-  font-size: 34px;
-  font-weight: lighter;
+	color: $agua;
+	font-size: 34px;
+	font-weight: lighter;
 }
-
 @media (max-width: 767px) {
   #intro .intro-content h2 {
     font-size: 44px;
   }
-  #intro .intro-content h2 span {
+  #intro .intro-content h2 span{
     font-size: 26px;
   }
 }
-
+//botones del banner
 #intro .intro-content .btn-get-started {
-  background: #0c2e8a;
-  border: 2px solid #0c2e8a;
+background: $azul;
+border: 2px solid $azul;
 }
 
 #intro .intro-content .btn-get-started:hover {
-  background: none;
-  color: #fff;
+	background: none;
+	color: $blanco;
 }
 
 #intro .intro-content .btn-projects {
-  background: #50d8af;
-  border: 2px solid #50d8af;
-}
+	background: $agua;
+	border: 2px solid $agua;
+	}
 
 #intro .intro-content .btn-projects:hover {
-  background: none;
-  color: #50d8af;
+	background: none;
+	color: $agua;
 }
 
+// boton de enviar email
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
-  background-color: #50d8af;
+  background-color: $agua;
 }
 
 #contact .php-email-form button[type="submit"] {
-  background: #0c2e8a;
+  background: $azul;
   border: 0;
   border-radius: 3px;
   padding: 10px 30px;
-  color: #fff;
+  color: $blanco;
   transition: 0.4s;
   cursor: pointer;
 }
 
 #contact .php-email-form button[type="submit"]:hover {
-  background: #50d8af;
+  background: $agua;
 }
-/*# sourceMappingURL=style.main.css.map */
