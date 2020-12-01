@@ -1,0 +1,111 @@
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #fff;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid #37517e;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: animate-preloader 1s linear infinite;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+#intro {
+	width: 100%;
+	height: 70vh ;
+	position: relative;
+	background-color: blueviolet;
+	background: url(../../src/images/banner.png) no-repeat center ;
+	background-size: cover ;
+	padding: 0;
+}
+
+#intro #intro-carousel::before {
+	content: '';
+	background-color: rgba(255, 255, 255, 0.021);
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 7;
+}
+
+#intro .intro-content h2 {
+	color: #fff;
+	margin-bottom: 30px;
+	font-size: 64px;
+	font-weight: 700;
+}
+
+#intro .intro-content h2 span {
+	color: #50d8af;
+	font-size: 34px;
+	font-weight: lighter;
+}
+@media (max-width: 767px) {
+  #intro .intro-content h2 {
+    font-size: 44px;
+  }
+  #intro .intro-content h2 span{
+    font-size: 26px;
+  }
+}
+#intro .intro-content .btn-get-started {
+background: #0c2e8a;
+border: 2px solid #0c2e8a;
+}
+
+#intro .intro-content .btn-get-started:hover {
+	background: none;
+	color: #fff;
+}
+
+#intro .intro-content .btn-projects {
+	background: #50d8af;
+	border: 2px solid #50d8af;
+	}
+
+#intro .intro-content .btn-projects:hover {
+	background: none;
+	color: #50d8af;
+}
