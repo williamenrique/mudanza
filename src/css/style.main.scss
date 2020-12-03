@@ -164,3 +164,14 @@ border: 2px solid $azul;
 #contact .php-email-form button[type="submit"]:hover {
   background: $agua;
 }
+
+// boton whatsapp
+.ht-ctc-cta-hover {
+	padding: 5px 16px;
+	background-color: rgb(37, 211, 102);
+	color: rgb(255, 255, 255);
+	border-radius: 10px;
+	margin: 0px 10px;
+	order: 1;
+	display: block;
+}
