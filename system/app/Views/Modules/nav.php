@@ -1,11 +1,11 @@
 <!-- ======= Top Bar ======= -->
 <section id="topbar" class="d-none d-lg-block">
 	<div class="container clearfix">
-		<div class="contact-info float-left">
+		<div class="float-left contact-info">
 			<i class="fa fa-envelope-o"></i> <a href="mailto:jcm1286@gmail.com">jcm1286@gmail.com</a>
 			<i class="fa fa-phone"></i> +56 998 4000 97
 		</div>
-		<div class="social-links float-right">
+		<div class="float-right social-links">
 			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
 			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
 			<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
@@ -21,7 +21,7 @@
 
 		<div id="logo" class="pull-left">
 
-			<h1><a href="index.html">Mudan<span>zas</span></a></h1>
+			<h1><a href="index.html">Mudanzas <span>JCM</span></a></h1>
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
 		</div>
@@ -42,6 +42,7 @@
 					</ul>
 				</li> -->
 				<li><a href="#contact">Contacto</a></li>
+				<li><a href="<?= base_url()?>comentarios">Comentarios</a></li>
 			</ul>
 		</nav><!-- #nav-menu-container -->
 	</div>
