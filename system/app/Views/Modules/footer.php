@@ -40,7 +40,11 @@
 <script src="<?= PLUGINS ?>isotope-layout/isotope.pkgd.min.js"></script>
 
 <!-- Template Main JS File -->
+<script>
+	const base_url = "<?= base_url()?>";
+</script>
 <script src="<?= JS ?>main.js"></script>
+<script src="<?= JS ?>/<?= $data['page_function']?>"></script>
 
 </body>
 

@@ -21,7 +21,7 @@
 
 		<div id="logo" class="pull-left">
 
-			<h1><a href="index.html">Mudanzas <span>JCM</span></a></h1>
+			<h1><a href="<?= base_url()?>">Mudanzas <span>JCM</span></a></h1>
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
 		</div>
@@ -62,7 +62,7 @@
 	</div>
 
 	<div id="intro-carousel" class="owl-carousel">
-		<!-- <div class="item" style="background-image: url('<?= IMG ?>banner.png');"></div> -->
+		<div class="item" style="background-image: url('<?= IMG ?>banner.jpg');"></div>
 
 		<!-- <div class="item" style="background-image: url('assets/img/intro-carousel/2.jpg');"></div>
 		<div class="item" style="background-image: url('assets/img/intro-carousel/3.jpg');"></div>

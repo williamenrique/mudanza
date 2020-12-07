@@ -140,10 +140,6 @@ function token(){
 	$token = $sr1 .'-'.$sr2.'-'.$sr3.'-'.$sr4;
 	return $token;
 }
-function formatMoney($cant){
-	$cant = number_format($cant,2,SPD,SPM);
-	return $cant;
-}
 
 function cargar_menu (string $strNick){
 	require_once ("system/app/Models/MenuModel.php");
@@ -185,11 +181,53 @@ function cargar_menu (string $strNick){
 			}
 			echo "<li class='nav-item link-".$options[$index+1]["page_link_activo"]."'>";
 			echo "<a href='".base_url().$options[$index+1]["url"]."' class='nav-link'>";
-			echo "<i class='far fa-circle nav-icon ml-3'></i>
+			echo "<i class='ml-3 far fa-circle nav-icon'></i>
 						<p>".$options[$index+1]["nombre_sub_menu"]."</p>";
 			echo "
 					</a>
 				</li>";
 		}
 	}
+}
+
+function email(string $nombre, string $email, string $asunto, string $mensaje){
+	require_once 'system/core/PHPMailer/send_mail.php';
+	$destinatario = $email;
+	$asunto = $asunto;
+	$mensaje =$mensaje;
+	$nom = $nombre;
+	// $apl = 'infante';
+	$SES_USER = Username;
+	// configuro direccion de envio
+	// $mail->setFrom($SES_USER, $nom);
+	$mail->setFrom($destinatario, $nom);
+
+	// ASUNTO DEL MENSAJE: Debe trarse de la config del cliente
+	$mail->Subject = $asunto;
+
+	// borro y seteo la direccion de respuesta
+	$mail->clearReplyTos();
+	$mail->addReplyTo($SES_USER);
+
+	// armo el body
+	$body = $mensaje;
+
+	// message (esta parte no tengo clara para que espero si la quito funciona mal)
+	////$body = eregi_replace("[\]", '', $body);
+
+	// asigno el cuerpo a la clase
+	$mail->msgHTML($body);
+
+	// borro y seteo el email del Destinatario
+	$mail->ClearAllRecipients();
+	$mail->addAddress($destinatario, "");
+
+	// Success
+	if ($mail->send()) {
+		$arrResponse = array("status" => true, "msg" => "Email enviado gracias por escibirnos, pronto seras contactado");
+	} else {
+		// $retorna['error'] = $mail->ErrorInfo;
+		$arrResponse = array("status" => false, "msg" => "A ocurrio un error en la configuración");
+	}
+	echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
 }

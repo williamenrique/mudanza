@@ -3,6 +3,7 @@ $azul : #0c2e8a;
 $agua : #50d8af;
 $blanco : #fff;
 $negro : #000;
+$rojo : #f51114;
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -85,16 +86,16 @@ $negro : #000;
 //texto del banner y transparencia
 #intro {
 	width: 100%;
-	height: 70vh ;
+	height: 60vh ;
 	position: relative;
 	background-color: blueviolet;
-	background: url(../../src/images/banner.png) no-repeat center ;
+	background: url(../../src/images/banner.jpg) no-repeat center ;
 	background-size: cover ;
 	padding: 0;
 }
 #intro #intro-carousel::before {
 	content: '';
-	background-color: rgba(255, 255, 255, 0.021);
+	background-color: rgba(255, 255, 255, 0.5);
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -104,18 +105,25 @@ $negro : #000;
 	bottom: 0;
 	z-index: 7;
 }
-
+#intro #intro-carousel .item {
+  width: 100%;
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition-property: opacity;
+}
 #intro .intro-content h2 {
-	color: $blanco;
+	color: $azul;
 	margin-bottom: 30px;
 	font-size: 64px;
 	font-weight: 700;
 }
 
 #intro .intro-content h2 span {
-	color: $agua;
+	color: $rojo;
 	font-size: 34px;
-	font-weight: lighter;
+	font-weight: bold;
 }
 @media (max-width: 767px) {
   #intro .intro-content h2 {
@@ -133,20 +141,79 @@ border: 2px solid $azul;
 
 #intro .intro-content .btn-get-started:hover {
 	background: none;
-	color: $blanco;
+	color: $azul;
 }
 
 #intro .intro-content .btn-projects {
-	background: $agua;
-	border: 2px solid $agua;
+	background: $rojo;
+	border: 2px solid $rojo;
 	}
 
 #intro .intro-content .btn-projects:hover {
 	background: none;
-	color: $agua;
+	color: $rojo;
 }
 
 // boton de enviar email
+
+
+//
+#contact .php-email-form .validate {
+  display: none;
+  color: $rojo;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact .php-email-form .error-message {
+  display: none;
+  color: $blanco;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+#contact .php-email-form .sent-message {
+  display: none;
+  color: $blanco;
+  background: $agua;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+#contact .php-email-form .loading {
+  display: none;
+  background: $blanco;
+  text-align: center;
+  padding: 15px;
+}
+
+#contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid $agua;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+#contact .php-email-form input, #contact .php-email-form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
 #contact .php-email-form input::focus, #contact .php-email-form textarea::focus {
   background-color: $agua;
 }
@@ -164,6 +231,29 @@ border: 2px solid $azul;
 #contact .php-email-form button[type="submit"]:hover {
   background: $agua;
 }
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
 
 // boton whatsapp
 .ht-ctc-cta-hover {
@@ -199,13 +289,13 @@ border: 2px solid $azul;
 }
 
 #header #logo h1 a {
-  color: #0c2e8a;
+  color: $azul;
   line-height: 1;
   display: inline-block;
 }
 
 #header #logo h1 a span {
-  color: #50d8af;
+  color: $rojo;
 }
 
 #header #logo img {

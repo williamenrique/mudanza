@@ -25,3 +25,10 @@ const DB_CHARSET = "charset=utf8";
 define('METHOD','AES-256-CBC');
 define('SECRET_KEY','B@53');
 define('SECRET_IV','101712');
+
+// datos de email
+define('SMTPSecure' , 'tls');
+define('Host'       , 'smtp.gmail.com');
+define('Username'   ,'william21enrique@gmail.com');
+define('Password'   ,'naca2105');
+define('Port'       ,'587');

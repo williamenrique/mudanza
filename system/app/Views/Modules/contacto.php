@@ -45,33 +45,33 @@
 
 		<div class="container">
 			<div class="form">
-				<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+				<form role="form" class="php-email-form" id="formEmail">
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4"
-								data-msg="Please enter at least 4 chars" />
+							<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu Nombre" data-rule="minlen:4"
+								data-msg="Por favor ingrese minimo de 4 caracteres" />
 							<div class="validate"></div>
 						</div>
 						<div class="form-group col-md-6">
 							<input type="email" class="form-control" name="email" id="email" placeholder="Tu email" data-rule="email"
-								data-msg="Please enter a valid email" />
+								data-msg="por favor ingrese un email valido" />
 							<div class="validate"></div>
 						</div>
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" data-rule="minlen:4"
-							data-msg="Please enter at least 8 chars of subject" />
+						<input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" data-rule="minlen:4"
+							data-msg="Por favor ingrese minimo de 8 caracteres de asunto" />
 						<div class="validate"></div>
 					</div>
 					<div class="form-group">
-						<textarea class="form-control" name="message" rows="5" data-rule="required"
-							data-msg="Please write something for us" placeholder="Mensaje"></textarea>
+						<textarea class="form-control" name="mensaje" id="mensaje" rows="5" data-rule="required"
+							data-msg="Por favor escriba su mensaje" placeholder="Mensaje"></textarea>
 						<div class="validate"></div>
 					</div>
 
 					<div class="mb-3">
-						<div class="loading">Loading</div>
-						<div class="error-message"></div>
+						<!-- <div class="loading">Loading</div>
+						<div class="error-message"></div> -->
 						<div class="sent-message">Su mensaje a sido enviado.Gracias!</div>
 					</div>
 
