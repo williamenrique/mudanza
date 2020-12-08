@@ -1,5 +1,6 @@
 <?php
-const BASE_URL = "http://mudanzas.cl/";
+// const BASE_URL = "http://mudanzas.cl/";
+const BASE_URL = "https://williamenrique.github.io/mudanza";
 const LIBS = "system/core/Libraries/";
 const VIEWS = "system/app/Views/";
 date_default_timezone_set('America/Caracas');
