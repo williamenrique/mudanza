@@ -16,7 +16,7 @@
 		data-is_ga_enable="yes" data-is_fb_pixel="yes" data-is_fb_an_enable="no" data-webandapi="webapi"
 		data-display_mobile="show" data-display_desktop="show" data-css="display: none; cursor: pointer; z-index: 99999999;"
 		data-position="position: fixed; bottom: 15px; left: 15px;"
-		data-position_mobile="position: fixed; bottom: 10px; right: 10px;" data-show_effect="120" data-no_number="added">
+		data-position_mobile="position: fixed; bottom: 15px; left: 15px;" data-show_effect="120" data-no_number="added">
 		<div style="display: flex; justify-content: center; align-items: center;  ">
 			<p class="ht-ctc-cta ht-ctc-cta-hover " style=" display: none;">
 				WhatsApp</p>
