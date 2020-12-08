@@ -1,33 +1,345 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en"
+	class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-	<!-- Bootstrap CSS -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+	<title><?= $data['page_title']?></title>
+	<meta content="" name="descriptison">
+	<meta content="" name="keywords">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex">
 
-	<title>Hello, world!</title>
+	<!-- Favicons -->
+	<link href="../src/images/favicon(1).png" rel="icon">
+	<link href="../src/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+	<!-- Google Fonts -->
+	<link
+		href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800|Montserrat:300,400,700"
+		rel="stylesheet">
+
+	<!-- Vendor CSS Files -->
+	<link href="../src/plugins/" rel="stylesheet">
+	<link href="../src/plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+	<link href="../src/plugins/animate.css/animate.min.css" rel="stylesheet">
+	<link href="../src/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="../src/plugins/venobox/venobox.css" rel="stylesheet">
+	<link href="../src/plugins/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<link href="../src/plugins/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+	<!-- Template Main CSS File -->
+	<link href="../src/css/" rel="stylesheet">
+	<link href="../src/css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<h1 class="mx-auto text-center text-primary display-4">Hello, world!</h1>
+	<!-- ======= Top Bar ======= -->
+	<section id="topbar" class="d-none d-lg-block">
+		<div class="container clearfix">
+			<div class="float-left contact-info">
+				<i class="fa fa-envelope-o"></i> <a href="mailto:jcm1286@gmail.com">jcm1286@gmail.com</a>
+				<i class="fa fa-phone"></i> +56 998 4000 97
+			</div>
+			<div class="float-right social-links">
+				<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+				<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+				<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+				<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+				<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			</div>
+		</div>
+	</section><!-- End Top Bar-->
 
-	<!-- Optional JavaScript; choose one of the two! -->
+	<!-- ======= Header ======= -->
+	<header id="header">
+		<div class="container">
 
-	<!-- Option 1: Bootstrap Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-		crossorigin="anonymous"></script>
+			<div id="logo" class="pull-left">
 
-	<!-- Option 2: Separate Popper and Bootstrap JS -->
-	<!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    -->
+				<h1><a href="#">Mudanzas <span>JCM</span></a></h1>
+				<!-- Uncomment below if you prefer to use an image logo -->
+				<!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
+			</div>
+
+			<nav id="nav-menu-container">
+				<ul class="nav-menu">
+					<li class="menu-active"><a href="index.html">Home</a></li>
+					<li><a href="#about">Acerca</a></li>
+					<li><a href="#services">Services</a></li>
+					<!-- <li><a href="#portfolio">Portfolio</a></li> -->
+					<!-- <li><a href="#team">Team</a></li> -->
+					<!-- <li class="menu-has-children"><a href="">Drop Down</a>
+						<ul>
+							<li><a href="#">Drop Down 1</a></li>
+							<li><a href="#">Drop Down 3</a></li>
+							<li><a href="#">Drop Down 4</a></li>
+							<li><a href="#">Drop Down 5</a></li>
+						</ul>
+					</li> -->
+					<li><a href="#contact">Contacto</a></li>
+					<li><a href="#comentarios">Comentarios</a></li>
+				</ul>
+			</nav><!-- #nav-menu-container -->
+		</div>
+	</header><!-- End Header -->
+
+	<!-- ======= Intro Section ======= -->
+	<section id="intro">
+
+		<div class="intro-content">
+			<h2>SERVICIO DE MUDANZAS<br>
+				<span>Mudanzas dentro y fuera de Santiago</span>
+			</h2>
+			<div>
+				<a href="#about" class="btn-get-started scrollto">Saber mas</a>
+				<a href="#contact" class="btn-projects scrollto">Contactenos</a>
+			</div>
+		</div>
+
+		<div id="intro-carousel" class="owl-carousel">
+			<div class="item" style="background-image: url('<?= IMG ?>banner.jpg');"></div>
+
+			<!-- <div class="item" style="background-image: url('assets/img/intro-carousel/2.jpg');"></div>
+			<div class="item" style="background-image: url('assets/img/intro-carousel/3.jpg');"></div>
+			<div class="item" style="background-image: url('assets/img/intro-carousel/4.jpg');"></div>
+			<div class="item" style="background-image: url('assets/img/intro-carousel/5.jpg');"></div> -->
+		</div>
+
+	</section><!-- End Intro Section -->
+	<main id="main">
+		<section id="about" class="wow fadeInUp">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 about-img">
+						<img src="<?= IMG ?>600.png" alt="">
+					</div>
+
+					<div class="col-lg-6 content">
+						<h2>Nuestra empresa</h2>
+						<h3>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+							laborum.</h3>
+
+						<ul>
+							<li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+							</li>
+							<li><i class="ion-android-checkmark-circle"></i> Duis aute irure dolor in reprehenderit in voluptate
+								velit.</li>
+							<li><i class="ion-android-checkmark-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.
+								Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat
+								nulla pariatur.</li>
+						</ul>
+
+					</div>
+				</div>
+
+			</div>
+		</section><!-- End About Section -->
+
+		<!-- ======= Services Section ======= -->
+		<section id="services">
+			<div class="container">
+				<div class="section-header">
+					<h2>Services</h2>
+					<p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim
+						export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export
+						irure minim illum fore</p>
+				</div>
+
+				<div class="row">
+
+					<div class="col-lg-6">
+						<div class="box wow fadeInLeft">
+							<div class="icon"><i class="fa fa-bar-chart"></i></div>
+							<h4 class="title"><a href="">Mudanzas pequenas</a></h4>
+							<p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+								occaecati cupiditate non provident etiro rabeta lingo.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="box wow fadeInRight">
+							<div class="icon"><i class="fa fa-picture-o"></i></div>
+							<h4 class="title"><a href="">Fletes locales</a></h4>
+							<p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+								commodo consequat tarad limino ata nodera clas.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="box wow fadeInLeft" data-wow-delay="0.2s">
+							<div class="icon"><i class="fa fa-shopping-bag"></i></div>
+							<h4 class="title"><a href="">Embalajes</a></h4>
+							<p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+								fugiat nulla pariatur trinige zareta lobur trade.</p>
+						</div>
+					</div>
+
+					<div class="col-lg-6">
+						<div class="box wow fadeInRight" data-wow-delay="0.2s">
+							<div class="icon"><i class="fa fa-map"></i></div>
+							<h4 class="title"><a href="">Traslados</a></a></h4>
+							<p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+								mollit anim id est laborum rideta zanox satirente madera</p>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section id="call-to-action" class="wow fadeInUp">
+			<div class="container">
+				<div class="row">
+					<div class="text-center col-lg-9 text-lg-left">
+						<h3 class="cta-title">Nuestro compromiso</h3>
+						<p class="cta-text">Nuestro compromiso se basa en la calidad de nuestro servicio, en el cumplimiento de los
+							plazos, y en la utilizacion de un personal altamente especializado y capatizado, generando así, la
+							satisfacción total de nuestros clientes.</p>
+					</div>
+					<div class="text-center col-lg-3 cta-btn-container">
+						<a class="align-middle cta-btn" href="#">Saber mas</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- contacto -->
+		<section id="contact" class="wow fadeInUp">
+			<div class="container">
+				<div class="section-header">
+					<h2>Contactenos</h2>
+					<p>Sed tamen tempor magna labore dolore dolor sint tempor duis magna elit veniam aliqua esse amet veniam enim
+						export quid quid veniam aliqua eram noster malis nulla duis fugiat culpa esse aute nulla ipsum velit export
+						irure minim illum fore</p>
+				</div>
+
+				<div class="row contact-info">
+
+					<div class="col-md-4">
+						<div class="contact-address">
+							<i class="ion-ios-location-outline"></i>
+							<h3>Direccion</h3>
+							<address>Titan 4870 estación central, Chile</address>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="contact-phone">
+							<i class="ion-ios-telephone-outline"></i>
+							<h3>Numero telefonico</h3>
+							<p><a href="tel:+155895548855">+56 998 4000 97</a></p>
+						</div>
+					</div>
+
+					<div class="col-md-4">
+						<div class="contact-email">
+							<i class="ion-ios-email-outline"></i>
+							<h3>Email</h3>
+							<p><a href="mailto:jcm1286@gmail.com">jcm1286@gmail.com</a></p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="container mb-4">
+
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.627653555639!2d-70.70519938509128!3d-33.459006105336805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c488c5ed6511%3A0xfd419656d542e7fd!2sTitan%204870%2C%20Santiago%2C%20Estaci%C3%B3n%20Central%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1606836067472!5m2!1ses-419!2sve"
+					width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+
+			<div class="container">
+				<div class="form">
+					<form role="form" class="php-email-form" id="formEmail">
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu Nombre"
+									data-rule="minlen:4" data-msg="Por favor ingrese minimo de 4 caracteres" />
+								<div class="validate"></div>
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Tu email"
+									data-rule="email" data-msg="por favor ingrese un email valido" />
+								<div class="validate"></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto"
+								data-rule="minlen:4" data-msg="Por favor ingrese minimo de 8 caracteres de asunto" />
+							<div class="validate"></div>
+						</div>
+						<div class="form-group">
+							<textarea class="form-control" name="mensaje" id="mensaje" rows="5" data-rule="required"
+								data-msg="Por favor escriba su mensaje" placeholder="Mensaje"></textarea>
+							<div class="validate"></div>
+						</div>
+
+						<div class="mb-3">
+							<!-- <div class="loading">Loading</div>
+									<div class="error-message"></div> -->
+							<div class="sent-message">Su mensaje a sido enviado.Gracias!</div>
+						</div>
+
+						<div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+					</form>
+				</div>
+
+			</div>
+		</section>
+
+
+	</main>
+
+
+	<!-- ======= Footer ======= -->
+	<footer id="footer">
+		<div class="container">
+			<div class="copyright">
+				&copy; Copyright <strong>Mudanzas Santiago</strong>. All Rights Reserved
+			</div>
+			<div class="credits">
+				Designed by <a href="#">Workinfo</a>
+			</div>
+		</div>
+	</footer><!-- End Footer -->
+	<div onclick="ht_ctc_click(this);"
+		class="ht-ctc ht-ctc-chat ctc_wp_desktop ctc-analytics style-2 ht_ctc_animation null"
+		style="position: fixed; bottom: 15px; left: 15px; cursor: pointer; z-index: 99999999;" data-return_type="chat"
+		data-style="2" data-number="56998400097" data-pre_filled="Hola, me interesan sus servicios (mensaje web)"
+		data-is_ga_enable="yes" data-is_fb_pixel="yes" data-is_fb_an_enable="no" data-webandapi="webapi"
+		data-display_mobile="show" data-display_desktop="show" data-css="display: none; cursor: pointer; z-index: 99999999;"
+		data-position="position: fixed; bottom: 15px; left: 15px;"
+		data-position_mobile="position: fixed; bottom: 10px; right: 10px;" data-show_effect="120" data-no_number="added">
+		<div style="display: flex; justify-content: center; align-items: center;  ">
+			<p class="ht-ctc-cta ht-ctc-cta-hover " style=" display: none;">
+				WhatsApp</p>
+			<img src="../src/images/whatsapp.svg" alt="" width="40" heith="40">
+		</div>
+	</div>
+	<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+	<div id="preloader"></div>
+	<!-- Vendor JS Files -->
+	<script src="../src/plugins/"></script>
+	<script src="../src/plugins/whatsapp/app.min.js"></script>
+	<script src="../src/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="../src/plugins/jquery.easing/jquery.easing.min.js"></script>
+	<script src="../src/plugins/php-email-form/validate.js"></script>
+	<script src="../src/plugins/wow/wow.min.js"></script>
+	<script src="../src/plugins/venobox/venobox.min.js"></script>
+	<script src="../src/plugins/owl.carousel/owl.carousel.min.js"></script>
+	<script src="../src/plugins/jquery-sticky/jquery.sticky.js"></script>
+	<script src="../src/plugins/superfish/superfish.min.js"></script>
+	<script src="../src/plugins/hoverIntent/hoverIntent.js"></script>
+	<script src="../src/plugins/isotope-layout/isotope.pkgd.min.js"></script>
+
+	<!-- Template Main JS File -->
+	<script src="../src/js/main.js"></script>
+	<script src="../src/js/function.main.js"></script>
+
 </body>
 
 </html>
