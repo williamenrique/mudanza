@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 about-img">
-					<img src="<?= IMG ?>600.png" alt="">
+					<img src="<?= IMG ?>servicios.jpg" alt="">
 				</div>
 
 				<div class="col-lg-6 content">

@@ -2,7 +2,7 @@
 <section id="topbar" class="d-none d-lg-block">
 	<div class="container clearfix">
 		<div class="float-left contact-info">
-			<i class="fa fa-envelope-o"></i> <a href="mailto:jcm1286@gmail.com">jcm1286@gmail.com</a>
+			<i class="fa fa-envelope-o"></i> <a href="mailto:transportejcm1286@gmail.com">transportejcm1286@gmail.com</a>
 			<i class="fa fa-phone"></i> +56 998 4000 97
 		</div>
 		<div class="float-right social-links">
