@@ -199,28 +199,67 @@ function email(string $nombre, string $email, string $asunto, string $mensaje){
 	// $apl = 'infante';
 	$SES_USER = Username;
 	// configuro direccion de envio
-	// $mail->setFrom($SES_USER, $nom);
-	$mail->setFrom($destinatario, $nom);
+	$mail->setFrom($SES_USER, $nom);
+	// $mail->setFrom($destinatario, $nom);
 
 	// ASUNTO DEL MENSAJE: Debe trarse de la config del cliente
 	$mail->Subject = $asunto;
 
 	// borro y seteo la direccion de respuesta
 	$mail->clearReplyTos();
-	$mail->addReplyTo($SES_USER);
+	// $mail->addReplyTo($SES_USER);
+	$mail->addReplyTo($destinatario);
 
 	// armo el body
-	$body = $mensaje;
+	// $body = $mensaje.' Enviar mensaje a '.$destinatario;
+	$message  = "<html><body>";
+
+	$message .= "<table width='100%' bgcolor='#e0e0e0' cellpadding='0' cellspacing='0' border='0'>";
+
+	$message .= "<tr><td>";
+
+	$message .= "<table align='center' width='100%' border='0' cellpadding='0' cellspacing='0' style='max-width:650px; background-color:#fff; font-family:Verdana, Geneva, sans-serif;'>";
+
+	$message .= "<thead>
+		<tr height='80'>
+		<th colspan='4' style='background-color:#f5f5f5; border-bottom:solid 1px #bdbdbd; font-family:Verdana, Geneva, sans-serif; color:#333; font-size:34px;' >Mudanzas JCM</th>
+		</tr>
+							</thead>";
+
+	$message .= "<tbody>
+								<tr align='center' height='50' style='font-family:Verdana, Geneva, sans-serif;'>
+									<td colspan='4' style='background-color:#00a2d1; text-align:center;'><a href='' style='color:#fff; text-decoration:none; text-transform : uppercase'>gracias por elejirnos</a></td>
+								</tr>
+
+								<tr>
+									<td colspan='4' style='padding:15px;'>
+										<p style='font-size:16px;'>Hola mi nombre es ' ".$nom.",</p>
+										<hr />
+										<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'>".$mensaje.".</p>
+										<img src='https://williamenrique.github.io/mudanza/src/images/publicidad.jpg' alt='Sending HTML eMail using PHPMailer in PHP' title='Sending HTML eMail using PHPMailer in PHP' style='height:auto; width:100%; max-width:100%;' />
+										<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'> Responder a ".$destinatario."</p>
+									</td>
+								</tr>
+
+								</tbody>";
+
+	$message .= "</table>";
+
+	$message .= "</td></tr>";
+	$message .= "</table>";
+
+	$message .= "</body></html>";
 
 	// message (esta parte no tengo clara para que espero si la quito funciona mal)
 	////$body = eregi_replace("[\]", '', $body);
 
 	// asigno el cuerpo a la clase
-	$mail->msgHTML($body);
+	$mail->msgHTML($message);
 
 	// borro y seteo el email del Destinatario
 	$mail->ClearAllRecipients();
-	$mail->addAddress($destinatario, "");
+	// $mail->addAddress($destinatario, "");
+	$mail->addAddress($SES_USER, "");
 
 	// Success
 	if ($mail->send()) {
@@ -231,3 +270,15 @@ function email(string $nombre, string $email, string $asunto, string $mensaje){
 	}
 	echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
 }
+
+// function email(string $nombre, string $email, string $asunto, string $mensaje){
+// 	$from="Mudanzas JCM  <soporte@mudanzajcm.com>";
+// 	$to = $email;
+// 	$subject = 'Estás a un solo click de participar' ;
+
+// 	$headers = 'From: ' . $from . PHP_EOL ;
+
+// 	$cuerpo ='';
+
+// 	mail($to, $subject, $cuerpo,"MIME-Version: 1.0\nContent-type: text/html; charset=UTF-8\n".$headers."");
+// }
