@@ -21,10 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
 					if (objData.status) {
 						let mensaje = document.querySelector(".sent-message");
 						mensaje.style.display = 'block';
+						mensaje.delay(1000).style.display = 'none';
 						mensaje.innerHTML = objData.msg;
+						formEmail.reset();
 					} else {
-							mensaje.style.display = 'block';
-							mensaje.innerHTML = objData.msg;
+						mensaje.style.display = 'block';
+						mensaje.innerHTML = objData.msg;
+						formEmail.reset();
 					}
 				}
 			}

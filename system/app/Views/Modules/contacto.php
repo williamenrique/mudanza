@@ -29,7 +29,7 @@
 					<div class="contact-email">
 						<i class="ion-ios-email-outline"></i>
 						<h3>Email</h3>
-						<p><a href="mailto:jcm1286@gmail.com">jcm1286@gmail.com</a></p>
+						<p><a href="mailto:transportejcm1286@gmail.com">transportejcm1286@gmail.com</a></p>
 					</div>
 				</div>
 
