@@ -42,8 +42,10 @@
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.627653555639!2d-70.70519938509128!3d-33.459006105336805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c488c5ed6511%3A0xfd419656d542e7fd!2sTitan%204870%2C%20Santiago%2C%20Estaci%C3%B3n%20Central%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1606836067472!5m2!1ses-419!2sve"
 				width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
-
 		<div class="container">
+			<div class="section-header">
+				<h2>Contactenos via email</h2>
+			</div>
 			<div class="form">
 				<form role="form" class="php-email-form" id="formEmail">
 					<div class="form-row">

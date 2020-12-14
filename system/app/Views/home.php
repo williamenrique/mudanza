@@ -28,6 +28,8 @@
 	<!-- ======= Contact Section ======= -->
 	<?php modules('contacto',$data)?>
 	<!-- End Contact Section -->
-
+	<!-- ======= Comentario Section ======= -->
+	<?php modules('comentarios',$data)?>
+	<!-- End comentario Section -->
 </main><!-- End #main -->
 <?php footer($data) ?>

@@ -18,17 +18,17 @@ const LOAD = BASE_URL."system/core/Libraries/Load.php";
 const DB_HOST = "localhost";
 const DB_USER = "root";
 const DB_PASS = "";
-const DB_NAME = "";
+const DB_NAME = "mudanza";
 const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
 define('METHOD','AES-256-CBC');
-define('SECRET_KEY','B@53');
+define('SECRET_KEY','Mud@n5a');
 define('SECRET_IV','101712');
 
 // datos de email
 define('SMTPSecure' , 'tls');
 define('Host'       , 'smtp.gmail.com');
-define('Username'   ,'william21enrique@gmail.com');
-define('Password'   ,'naca2105');
-define('Port'       ,'587');
+define('Username'   , 'william21enrique@gmail.com');
+define('Password'   , 'naca2105');
+define('Port'       , '587');
