@@ -28,6 +28,7 @@
 	<link href="<?= PLUGINS ?>venobox/venobox.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>boxicons/css/boxicons.min.css" rel="stylesheet">
+	<link href="<?= PLUGINS ?>sweetalert/sweetalert2.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
 	<link href="<?= CSS ?>style.main.css" rel="stylesheet">
