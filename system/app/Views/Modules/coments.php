@@ -3,6 +3,7 @@
 
 		<div class="section-header">
 			<h2>Deja tu comentario</h2>
+			<button type="button" class="btn btn-primary" onclick="openModal()">Comenta aqui</button>
 		</div>
 		<div class="comments-container">
 			<ul id="comments-list" class="comments-list">

@@ -23,6 +23,25 @@ class Home extends Controllers{
 
 		}
 		die();
-
+	}
+	/* envio de comentario crear */
+	public function setComent(){
+		if($_POST){
+			$txtNombre = $_POST['txtNombre'];
+			$txtemail = $_POST['txtEmail'];
+			$txtMensaje = $_POST['txtMensaje'];
+			if(empty($_POST['txtNombre']) || empty($_POST['txtEmail'] )|| empty($_POST['txtMensaje'] )){
+				$arrResponse = array("status" => false, "msg" => "Debe llenar los campos");
+			}else{
+				$requestComent = $this->model->insertComent($txtNombre, $txtemail, $txtMensaje);
+				if($requestComent > 0){
+					$arrResponse = array("status" => true, "msg" => "Comentario creado");
+				}else{
+					$arrResponse = array("status" => false, "msg" => "Imposible crear el comentario");
+				}
+			}
+			echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
+		}
+		die();
 	}
 }

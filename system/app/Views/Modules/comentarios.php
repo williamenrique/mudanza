@@ -1,3 +1,94 @@
+<style>
+/* comentario Section
+--------------------------------*/
+#comentario {
+	// padding: 60px 0;
+	border: 1px solid red;
+	border-radius: 4px;
+	padding: 5px;
+}
+
+#comentario .section-header {
+  margin-bottom: 40px;
+}
+
+@media (max-width: 767px) {
+  #comentario .comentario-item {
+    text-align: center;
+  }
+}
+
+// #comentario .comentario-item .comentario-img {
+//   width: 120px;
+//   border-radius: 50%;
+//   border: 4px solid #fff;
+//   float: left;
+// }
+
+// @media (max-width: 767px) {
+//   #comentario .comentario-item .comentario-img {
+//     float: none;
+//     margin: auto;
+//   }
+// }
+
+#comentario .comentario-item h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+  // margin-left: 140px;
+}
+
+#comentario .comentario-item h5 {
+  font-size: 10px;
+  color: #999;
+  margin: 0 0 15px 0;
+  // margin-left: 140px;
+}
+
+#comentario .comentario-item p {
+  font-style: italic;
+  margin: 0 0 15px 10px;
+}
+#comentario .comentario-item .respuesta {
+  margin: 0 0 0 20px;
+}
+
+#comentario .comentario-item .respuesta p{
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  #comentario .comentario-item p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  #comentario .comentario-item h3, #comentario .comentario-item h4, #comentario .comentario-item p {
+    margin-left: 0;
+  }
+}
+
+#comentario .owl-nav, #comentario .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+#comentario .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#comentario .owl-dot.active {
+  background-color: #1bb1dc;
+}
+</style>
 <section class="box-comentarios">
 	<div class="container">
 		<div class="section-header">

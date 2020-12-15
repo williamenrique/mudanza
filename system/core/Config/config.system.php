@@ -18,7 +18,7 @@ const LOAD = BASE_URL."system/core/Libraries/Load.php";
 const DB_HOST = "localhost";
 const DB_USER = "root";
 const DB_PASS = "";
-const DB_NAME = "mudanza";
+const DB_NAME = "bd_mudanza";
 const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
