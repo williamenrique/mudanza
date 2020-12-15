@@ -43,13 +43,14 @@ async function reply() {
 	const { value: formValues } = await Swal.fire({
 		title: 'Ingrese los datos',
 		html:
-			'<input id="swal-hidden" class="swal2-input" placeholder="Nombre" value="'+id+'">' +
+			'<input id="swal-hidden" type="hidden" class="swal2-input" placeholder="Nombre" value="'+id+'">' +
 			'<input id="swal-input1" class="swal2-input" placeholder="Nombre">' +
 			'<input id="swal-input2" class="swal2-input" placeholder="Email">'+
 			'<input id="swal-input3" class="swal2-input" placeholder="Comentario">',
 		focusConfirm: false,
 		preConfirm: () => {
 			return [
+				document.getElementById('swal-hidden').value,
 				document.getElementById('swal-input1').value,
 				document.getElementById('swal-input2').value,
 				document.getElementById('swal-input3').value
@@ -59,5 +60,6 @@ async function reply() {
 
 	if (formValues) {
 		Swal.fire(JSON.stringify(formValues))
+		/* Envio de datos por ajax */
 	}
 }
