@@ -44,4 +44,81 @@ class Home extends Controllers{
 		}
 		die();
 	}
+
+	/* obtener los comentarios */
+	public function getComents(){
+		$arrData = $this->model->selectComents();
+		$htmlOptions = "";
+		if(empty($arrData)){
+			$htmlOptions .= '
+											<div class="alert msjAlert" role="alert">
+												No existen comentarios aun...!
+											</div>
+											';
+		}else{
+			$htmlOptions .='
+										<ul id="comments-list" class="comments-list">
+											<li >
+										';
+			foreach ($arrData as $key) {
+				/* comentario */
+				$htmlOptions .= '
+												<div class="mb-4 comment-main-level">
+													<!-- Contenedor del Comentario -->
+													<div class="comment-box">
+														<div class="comment-head">
+															<h6 class="comment-name by-author"><a href="#">'.$key['autor'].'</a></h6>
+															<span>'.formatear_fecha($key['fecha']).'</span>
+															<i class="fa fa-reply" onclick="fntReply('.$key['id'].')"></i>
+														</div>
+														<div class="comment-content">
+															'.$key['contenido'].'
+														</div>
+													</div>
+												</div>
+												';
+				$arrDataR = $this->model->selectReply($key['id']);
+				for ($i=0; $i < count($arrDataR) ; $i++) {
+					/* respuestas de comentario */
+				$htmlOptions .= '
+												<ul class="comments-list reply-list">
+													<li>
+														<!-- Contenedor del Comentario -->
+														<div class="comment-box">
+															<div class="comment-head">
+																<h6 class="comment-name"><a href="#">'.$arrDataR[$i]['nombre'].'</h6>
+																<span>'.formatear_fecha($arrDataR[$i]['fecha']).'</span>
+															</div>
+															<div class="comment-content">
+															'.$arrDataR[$i]['respuesta'].'
+															</div>
+														</div>
+													</li>
+												</ul>
+												';
+				}
+			}
+			$htmlOptions .= '
+										</li>
+									</ul>
+											';
+		}
+		echo $htmlOptions;
+		die();
+	}
+
+	/* obtener un solo comentario */
+	public function getComent(int $id){
+		$intIdComent = intval($id);
+		if($intIdComent > 0){
+			$arrData = $this->model->selectComent($intIdComent);
+			if(empty($arrData)){
+				$arrResponse = array('status' => false, 'msg' => 'Datos no encontrados');
+			}else{
+				$arrResponse = array('status' => true, 'data' => $arrData);
+			}
+			echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+		}
+		die();
+	}
 }

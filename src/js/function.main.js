@@ -71,7 +71,8 @@ document.addEventListener('DOMContentLoaded', function () {
 						notifi(objData.msg, 'success');
 						$("#modalComent").modal("hide");
 						formComent.reset();
-						/* recargamos la funcion que nos llama los comentarios */
+					/* recargamos la funcion que nos llama los comentarios */
+						fntComent();
 					} else {
 						notifi(objData.msg, 'error');
 					}
@@ -79,7 +80,59 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		}
 	}
+
 }, false);
+
+window.addEventListener('load', function () {
+	fntComent();
+},false)
+/*************************
+ * funcion para obtener los comentarios
+ ************************/
+function fntComent() {
+	if (document.querySelector('.comments-container')) {
+		let ajaxUrl = base_url + "Home/getComents";
+		//creamos el objeto para os navegadores
+		var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+		//abrimos la conexion y enviamos los parametros para la peticion
+		request.open("GET", ajaxUrl, true);
+		request.send();
+		request.onreadystatechange = function () {
+			if (request.readyState == 4 && request.status == 200) {
+				//option obtenidos del controlador
+				document.querySelector('.comments-container').innerHTML = request.responseText;
+			}
+		}
+	}
+}
+/* contestar el comentario */
+function fntReply(id) {
+	document.querySelector('#idComent').value = '';//limpiar el value del input hiden del modal
+	document.querySelector('#titleModal').innerHTML = 'Contestar comentario';
+	// document.querySelector('.modal-header').classList.replace('headerComentar', 'headerPreguntar');
+	document.querySelector('#btnActionForm').classList.replace('btn-primary', 'btn-info');
+	document.querySelector('#btnText').innerHTML = 'Contestar';
+
+	//nos referimos a ese elmento aque lo hemos dado click
+	var id = id;
+	//creamos el objeto para os navegadores
+	var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+	var ajaxUrl = base_url + "Home/getComent/" + id;
+	//abrimos la conexion y enviamos los parametros para la peticion
+	request.open("GET", ajaxUrl, true);
+	request.send();
+	request.onreadystatechange = function () {
+		if (request.readyState == 4 && request.status == 200) {
+			var objData = JSON.parse(request.responseText);
+			if (objData.status) {
+				document.querySelector('#idComent').value = objData.data.id;
+				document.querySelector('#txtNombre').value = objData.data.autor;
+			 }
+		}
+		$("#modalComent").modal("show");
+	}
+}
+
 
 /* abrir el modal */
 function openModal() {
