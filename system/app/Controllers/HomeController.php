@@ -24,10 +24,10 @@ class Home extends Controllers{
 	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
 	public function sendEmail(){
 		if($_POST){
-			$nombre = ucwords($_POST['nombre']);
-			$email = strtolower($_POST['email']);
-			$asunto = ucwords($_POST['asunto']);
-			$mensaje = ucwords($_POST['mensaje']);
+			$nombre = strClean(ucwords($_POST['nombre']));
+			$email = strClean(strtolower($_POST['email']));
+			$asunto = strClean(ucwords($_POST['asunto']));
+			$mensaje = strClean(ucwords($_POST['mensaje']));
 
 			email($nombre, $email, $asunto, $mensaje);
 			$this->model->setEmail($nombre, $email,$asunto,$mensaje);
@@ -38,9 +38,9 @@ class Home extends Controllers{
 	public function setComent(){
 		if($_POST){
 			$idComent = intval($_POST['idComent']);
-			$txtNombre = ucwords($_POST['txtNombre']);
-			$txtemail = strtolower($_POST['txtEmail']);
-			$txtMensaje = ucwords($_POST['txtMensaje']);
+			$txtNombre =strClean( ucwords($_POST['txtNombre']));
+			$txtemail = strClean(strtolower($_POST['txtEmail']));
+			$txtMensaje = strClean(ucwords($_POST['txtMensaje']));
 
 			if(empty($_POST['txtNombre']) || empty($_POST['txtEmail'] )|| empty($_POST['txtMensaje'] )){
 				$arrResponse = array("status" => false, "msg" => "Debe llenar los campos");
@@ -150,9 +150,9 @@ class Home extends Controllers{
 	public function setReply(){
 		if($_POST){
 			$txtIdComent = intval($_POST['idComent']);
-			$txtNombre = ucwords($_POST['txtNombre']);
-			$txtemail = strtolower($_POST['txtEmail']);
-			$txtMensaje = ucwords($_POST['txtMensaje']);
+			$txtNombre = strClean(ucwords($_POST['txtNombre']));
+			$txtemail = strClean(strtolower($_POST['txtEmail']));
+			$txtMensaje = strClean(ucwords($_POST['txtMensaje']));
 			if(empty($_POST['txtNombre']) || empty($_POST['txtEmail'] )|| empty($_POST['txtMensaje'] )){
 				$arrResponse = array("status" => false, "msg" => "Debe llenar los campos");
 			}else{
