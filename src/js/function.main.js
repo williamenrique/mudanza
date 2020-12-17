@@ -81,6 +81,9 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	}
 
+	/* contestar comentario */
+
+
 }, false);
 
 window.addEventListener('load', function () {
@@ -126,8 +129,7 @@ function fntReply(id) {
 			var objData = JSON.parse(request.responseText);
 			if (objData.status) {
 				document.querySelector('#idComent').value = objData.data.id;
-				document.querySelector('#txtNombre').value = objData.data.autor;
-			 }
+			}
 		}
 		$("#modalComent").modal("show");
 	}
@@ -203,9 +205,3 @@ async function comment() {
 		/* Envio de datos por ajax */
 	}
 }
-
-
-
-$(".btnComent").click(function () {
-	comment();
-})

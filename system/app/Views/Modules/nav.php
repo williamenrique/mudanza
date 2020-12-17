@@ -2,8 +2,8 @@
 <section id="topbar" class="d-none d-lg-block">
 	<div class="container clearfix">
 		<div class="float-left contact-info">
-			<i class="fa fa-envelope-o"></i> <a href="mailto:transportejcm1286@gmail.com">transportejcm1286@gmail.com</a>
-			<i class="fa fa-phone"></i> +56 998 4000 97
+			<i class="fa fa-envelope-o"></i> <a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a>
+			<i class="fa fa-phone"></i> <?= $data["page_tlf"]?>
 		</div>
 		<div class="float-right social-links">
 			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
@@ -21,14 +21,14 @@
 
 		<div id="logo" class="pull-left">
 
-			<h1><a href="<?= base_url()?>">Mudanzas <span>JCM</span></a></h1>
+			<h1><a href="<?= base_url()?>"><?= $data["page_empresa"]?></a></h1>
 			<!-- Uncomment below if you prefer to use an image logo -->
 			<!-- <a href="index.html"><img src="assets/img/logo.png" alt=""></a>-->
 		</div>
 
 		<nav id="nav-menu-container">
 			<ul class="nav-menu">
-				<li class="menu-active"><a href="index.html">Home</a></li>
+				<li class="menu-active"><a href="<?= base_url()?>">Home</a></li>
 				<li><a href="#about">Acerca</a></li>
 				<li><a href="#services">Services</a></li>
 				<!-- <li><a href="#portfolio">Portfolio</a></li> -->
@@ -52,8 +52,8 @@
 <section id="intro">
 
 	<div class="intro-content">
-		<h2>SERVICIO DE MUDANZAS<br>
-			<span>Mudanzas dentro y fuera de Santiago</span>
+		<h2><?= $data["page_titulo"]?><br>
+			<span><?= $data["page_subtitulo"]?></span>
 		</h2>
 		<div>
 			<a href="#about" class="btn-get-started scrollto">Saber mas</a>

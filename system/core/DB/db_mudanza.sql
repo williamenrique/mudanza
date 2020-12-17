@@ -36,7 +36,6 @@ CREATE TABLE `coment_respuesta` (
 
 LOCK TABLES `coment_respuesta` WRITE;
 /*!40000 ALTER TABLE `coment_respuesta` DISABLE KEYS */;
-INSERT INTO `coment_respuesta` VALUES (1,1),(1,2),(2,3);
 /*!40000 ALTER TABLE `coment_respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -54,7 +53,7 @@ CREATE TABLE `comentario` (
   `contenido` text DEFAULT NULL,
   `fecha` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -63,7 +62,6 @@ CREATE TABLE `comentario` (
 
 LOCK TABLES `comentario` WRITE;
 /*!40000 ALTER TABLE `comentario` DISABLE KEYS */;
-INSERT INTO `comentario` VALUES (1,'william enrique','will.registro@gmail.com','solicitud de mudanza','2020-12-15 07:19:06'),(2,'ybet nacari','ybet.naca@gmail.com','los envios son a nivel nacional','2020-12-15 07:19:06');
 /*!40000 ALTER TABLE `comentario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,7 +108,7 @@ CREATE TABLE `respuesta` (
   `respuesta` text DEFAULT NULL,
   `fecha` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -119,7 +117,6 @@ CREATE TABLE `respuesta` (
 
 LOCK TABLES `respuesta` WRITE;
 /*!40000 ALTER TABLE `respuesta` DISABLE KEYS */;
-INSERT INTO `respuesta` VALUES (1,'mudanzas jcm','transportejcm@gmail,com','digame que necesita','2020-12-15 07:21:37'),(2,'pedro gonzalez','pedro@hotmail.com','hola soy nuevo aqui','2020-12-15 07:21:37'),(3,'miguel romero','miguel@gmail.com','yo tambien quiero saber si son a nivel nacional','2020-12-15 07:21:37');
 /*!40000 ALTER TABLE `respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -132,4 +129,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-15 15:27:43
+-- Dump completed on 2020-12-15 20:53:26

@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
-#topbar {
+/* #topbar {
   background: #fff;
   padding: 10px 0;
   border-bottom: 1px solid #eee;
@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #topbar .social-links a:first-child {
   border-left: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Header
@@ -405,7 +405,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Nav Styling */
-#mobile-nav {
+/* #mobile-nav {
   position: fixed;
   top: 0;
   padding-top: 18px;
@@ -416,7 +416,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 260px;
   overflow-y: auto;
   transition: 0.4s;
-}
+} */
 
 #mobile-nav ul {
   padding: 0;
@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-#mobile-nav ul li a {
+/* #mobile-nav ul li a {
   color: #fff;
   font-size: 16px;
   overflow: hidden;
@@ -438,11 +438,11 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   display: block;
   outline: none;
-}
+} */
 
-#mobile-nav ul li a:hover {
+/* #mobile-nav ul li a:hover {
   color: #fff;
-}
+} */
 
 #mobile-nav ul li li {
   padding-left: 30px;
@@ -499,7 +499,7 @@ section {
 
 /* Sections Header
 --------------------------------*/
-.section-header {
+/* .section-header {
   margin-bottom: 30px;
 }
 
@@ -526,7 +526,7 @@ section {
 .section-header p {
   padding: 0;
   margin: 0;
-}
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
