@@ -9,7 +9,12 @@ class Home extends Controllers{
 		$data['page_title'] = $sqlDatos["empresa"];
 		$data['page_empresa'] = $sqlDatos["empresa"];
 		$data['page_email'] = strtolower($sqlDatos["email"]);
+		$data['page_facebook'] = strtolower($sqlDatos["facebook"]);
+		$data['page_instagram'] = strtolower($sqlDatos["instagram"]);
+		$data['page_twitter'] = strtolower($sqlDatos["twitter"]);
 		$data['page_tlf'] = $sqlDatos["telefono"];
+		$data['page_location'] = $sqlDatos["location"];
+		$data['page_direccion'] = $sqlDatos["direccion"];
 		$data['page_titulo'] = ucwords($sqlDatos["titulo"]);
 		$data['page_subtitulo'] = ucwords($sqlDatos["subtitulo"]);
 		$data['page_link'] = "home";
@@ -25,6 +30,7 @@ class Home extends Controllers{
 			$mensaje = ucwords($_POST['mensaje']);
 
 			email($nombre, $email, $asunto, $mensaje);
+			$this->model->setEmail($nombre, $email,$asunto,$mensaje);
 		}
 		die();
 	}

@@ -1,27 +1,12 @@
 <!-- ======= Footer ======= -->
-<!-- ======= Top Bar ======= -->
-<section id="topbar" class="d-lg-none">
-	<div class="container clearfix">
-		<div class="text-center contact-info">
-			<i class="fa fa-envelope-o"></i> <a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a>
-			<i class="fa fa-phone"></i> <?= $data["page_tlf"]?>
-		</div>
-		<div class="text-center social-links">
-			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-			<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
-		</div>
-	</div>
-</section><!-- End Top Bar-->
+
 <footer id="footer">
 	<div class="container">
 		<div class="copyright">
-			&copy; Copyright <strong>Mudanzas Santiago</strong>. All Rights Reserved
+			&copy; Copyright <strong><?= $data["page_empresa"]?></strong>. All Rights Reserved
 		</div>
 		<div class="credits">
-			Designed by <a href="#">Workinfo</a>
+			Designed by <a href="#">WM</a>
 		</div>
 	</div>
 </footer><!-- End Footer -->

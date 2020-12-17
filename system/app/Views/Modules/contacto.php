@@ -13,7 +13,7 @@
 					<div class="contact-address">
 						<i class="ion-ios-location-outline"></i>
 						<h3>Direccion</h3>
-						<address>Titan 4870 estación central, Chile</address>
+						<address><?= $data["page_direccion"]?></address>
 					</div>
 				</div>
 
@@ -21,7 +21,7 @@
 					<div class="contact-phone">
 						<i class="ion-ios-telephone-outline"></i>
 						<h3>Numero telefonico</h3>
-						<p><a href="tel:+155895548855">+56 998 4000 97</a></p>
+						<p><a href="tel:<?= $data["page_tlf"]?>"><?= $data["page_tlf"]?>97</a></p>
 					</div>
 				</div>
 
@@ -29,7 +29,7 @@
 					<div class="contact-email">
 						<i class="ion-ios-email-outline"></i>
 						<h3>Email</h3>
-						<p><a href="mailto:transportejcm1286@gmail.com">transportejcm1286@gmail.com</a></p>
+						<p><a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a></p>
 					</div>
 				</div>
 
@@ -39,7 +39,7 @@
 		<div class="container mb-4">
 
 			<iframe
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.627653555639!2d-70.70519938509128!3d-33.459006105336805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c488c5ed6511%3A0xfd419656d542e7fd!2sTitan%204870%2C%20Santiago%2C%20Estaci%C3%B3n%20Central%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1606836067472!5m2!1ses-419!2sve"
+				src="<?= $data["page_location"]?>"
 				width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		<div class="container">

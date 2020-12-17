@@ -22,13 +22,12 @@ document.addEventListener('DOMContentLoaded', function () {
 					let objData = JSON.parse(request.responseText);
 					if (objData.status) {
 						let mensaje = document.querySelector(".sent-message");
-						mensaje.style.display = 'block';
-						mensaje.delay(1000).style.display = 'none';
+						// mensaje.style.display = 'block';
 						mensaje.innerHTML = objData.msg;
 						formEmail.reset();
+						$(".sent-message").fadeIn(3000).delay(2000).fadeOut(2000);
 					} else {
-						mensaje.style.display = 'block';
-						mensaje.innerHTML = objData.msg;
+						notifi(objData.msg, 'error');
 						formEmail.reset();
 					}
 				}
@@ -108,6 +107,8 @@ function fntComent() {
 		}
 	}
 }
+
+
 /* contestar el comentario */
 function fntReply(id) {
 	document.querySelector('#idComent').value = '';//limpiar el value del input hiden del modal

@@ -5,7 +5,7 @@
 <main id="main">
 
 	<!-- ======= About Section ======= -->
-	<?php /* modules('acerca',$data) */  ?>
+	<?php modules('acerca',$data)  ?>
 	<!-- End Services Section -->
 
 	<!-- ======= Clients Section ======= -->
@@ -21,18 +21,18 @@
 	<!-- End Testimonials Section -->
 
 	<!-- ======= Call To Action Section ======= -->
-	<?php /* modules('call',$data) */?>
+	<?php modules('call',$data)?>
 	<!-- End Call To Action Section -->
 
 	<!-- ======= Team Section ======= -->
 
 	<!-- End Team Section -->
 	<!-- ======= Contact Section ======= -->
-	<?php /* modules('contacto',$data) */?>
+	<?php modules('contacto',$data)?>
 	<!-- End Contact Section -->
 
 	<!-- ======= Comentario Section ======= -->
-	<div class="coments">
+	<div class="coments" id="coments">
 		<div class="container">
 
 			<div class="row">

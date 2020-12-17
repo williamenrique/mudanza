@@ -4,6 +4,7 @@ class HomeModel extends Mysql {
 	private $intIdReply;
 	private $strTxtNombre;
 	private $strTxtEmail;
+	private $strTxtAsunto;
 	private $strTxtMensaje;
 
 	public function __construct(){
@@ -72,5 +73,19 @@ class HomeModel extends Mysql {
 		$sql = "SELECT * FROM comentario WHERE id = $this->intIdComent";
 		$request = $this->select($sql);
 		return $request;
+	}
+
+	/* inseratr respaldo email */
+	public function setEmail(string $strTxtNombre, string $strTxtEmail, string $strTxtAsunto, string $strTxtMensaje){
+
+		$this->strTxtNombre = $strTxtNombre;
+		$this->strTxtEmail = $strTxtEmail;
+		$this->strTxtAsunto = $strTxtAsunto;
+		$this->strTxtMensaje = $strTxtMensaje;
+
+		$queryInsert = "INSERT INTO email(nombre,email,asunto,mensaje) VALUES(?,?,?,?)";
+		$arrData = array($this->strTxtNombre,$this->strTxtEmail,$this->strTxtAsunto,$this->strTxtMensaje);
+		$requestInser =$this->insert($queryInsert,$arrData);
+		return $requestInser;
 	}
 }

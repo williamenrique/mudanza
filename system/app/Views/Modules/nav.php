@@ -6,11 +6,11 @@
 			<i class="fa fa-phone"></i> <?= $data["page_tlf"]?>
 		</div>
 		<div class="float-right social-links">
-			<a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-			<a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-			<a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-			<a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+			<a href="<?= $data["page_twitter"]?>" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
+			<a href="<?= $data["page_facebook"]?>" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
+			<a href="<?= $data["page_instagram"]?>" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+			<!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
 		</div>
 	</div>
 </section><!-- End Top Bar-->
@@ -42,7 +42,7 @@
 					</ul>
 				</li> -->
 				<li><a href="#contact">Contacto</a></li>
-				<li><a href="<?= base_url()?>comentarios">Comentarios</a></li>
+				<li><a href="#coments">Comentarios</a></li>
 			</ul>
 		</nav><!-- #nav-menu-container -->
 	</div>
