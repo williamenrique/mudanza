@@ -11,6 +11,18 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="noindex">
 
+	<!-- tags -->
+	<meta name="description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa">
+	<meta name="author" content="Juan Carlos Matheus">
+	<meta property="og:locale" content="en_EN" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Viajes, mudanzas y transporte" />
+	<meta property="og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa" />
+	<meta property="og:url" content="https://williamenrique.github.io/mudanza/" />
+	<meta property="og:site_name" content="mahcode.com" />
+	<!-- <meta property="article:publisher" content="https://www.facebook.com/Mahcode-849841581779986" /> -->
+	<meta property="article:published_time" content="2020-12-10T02:05:30Z" />
+	<meta property="og:image" content="https://williamenrique.github.io/mudanza/src/images/banner.jpg" />
 	<!-- Favicons -->
 	<link href="src/images/favicon(1).png" rel="icon">
 	<link href="src/images/apple-touch-icon.png" rel="apple-touch-icon">
@@ -306,6 +318,12 @@
 			</div>
 		</div>
 	</footer><!-- End Footer -->
+
+	<div class="share-fb" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
+		<div style="display: flex; justify-content: center; align-items: center;  ">
+			<img src="src/images/whatsapp.svg" alt="" width="40" heith="40">
+		</div>
+	</div>
 	<div onclick="ht_ctc_click(this);"
 		class="ht-ctc ht-ctc-chat ctc_wp_desktop ctc-analytics style-2 ht_ctc_animation null"
 		style="position: fixed; bottom: 15px; left: 15px; cursor: pointer; z-index: 99999999;" data-return_type="chat"
@@ -339,6 +357,18 @@
 	<!-- Template Main JS File -->
 	<script src="src/js/main.js"></script>
 	<script src="src/js/function.main.js"></script>
+
+	<script>
+		$(function () {
+			const ARTICLE_TITLE = document.title;
+			const ARTICLE_URL = encodeURIComponent(window.location.href);
+			const MAIN_IMAGE_URL = encodeURIComponent($('meta[property="og:image"]').attr('content'));
+
+			$('.share-fb').click(function () {
+				window.open('http://www.facebook.com/sharer/sharer.php?u=' + ARTICLE_URL, 'facebook_share');
+			});
+		})
+	</script>
 
 </body>
 
