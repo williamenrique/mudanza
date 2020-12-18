@@ -10,6 +10,14 @@
 		</div>
 	</div>
 </footer><!-- End Footer -->
+
+<!-- boton facebook -->
+<div class="share-fb" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
+	<div style="display: flex; justify-content: center; align-items: center;  ">
+		<img src="<?= IMG ?>facebook.png" alt="" width="40" heith="40">
+	</div>
+</div>
+<!-- boton whatsapp -->
 <div onclick="ht_ctc_click(this);" class="ht-ctc ht-ctc-chat ctc_wp_desktop ctc-analytics style-2 ht_ctc_animation null"
 	style="position: fixed; bottom: 15px; left: 15px; cursor: pointer; z-index: 99999999;" data-return_type="chat"
 	data-style="2" data-number="<?= $data["page_tlf"]?>" data-pre_filled="Hola, me interesan sus servicios (mensaje web)"
