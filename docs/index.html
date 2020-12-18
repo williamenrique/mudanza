@@ -365,8 +365,11 @@
 			const MAIN_IMAGE_URL = encodeURIComponent($('meta[property="og:image"]').attr('content'));
 
 			$('.share-fb').click(function () {
-				window.open('http://www.facebook.com/sharer/sharer.php?u=' + ARTICLE_URL, 'facebook_share');
+				window.open('http://www.facebook.com/sharer/sharer.php?u=' + ARTICLE_URL, 'facebook_share',);
 			});
+			function open_window(url, name) {
+				window.open(url, name, 'height=320, width=640, toolbar=no, menubar=no, scrollbars=yes, resizable=yes, location=no, directories=no, status=no');
+			}
 		})
 	</script>
 
