@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 class Home extends Controllers{
 	public function __construct(){
 		//invocar para que se ejecute el metodo de la herencia

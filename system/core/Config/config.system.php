@@ -1,5 +1,6 @@
 <?php
-const BASE_URL = "http://mudanzas.cl/";
+const BASE_URL = "https://transportemudanzas.cl/";
+// const BASE_URL = "http://mudanzas.cl/";
 const LIBS = "system/core/Libraries/";
 const VIEWS = "system/app/Views/";
 date_default_timezone_set('America/Caracas');
@@ -19,7 +20,11 @@ const DB_HOST = "localhost";
 const DB_USER = "root";
 const DB_PASS = "";
 const DB_NAME = "bd_mudanza";
-const DB_CHARSET = "charset=utf8";
+// const DB_HOST = "localhost";
+// const DB_USER = "transpo4_mudanza";
+// const DB_PASS = "Tr@n5p0rt3";
+// const DB_NAME = "transpo4_mudanza";
+// const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
 define('METHOD','AES-256-CBC');

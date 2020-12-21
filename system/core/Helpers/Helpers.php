@@ -1,4 +1,5 @@
 <?php
+header('Access-Control-Allow-Origin: *');
 //retorna la ruta del proyecto
 function base_url(){
 	return BASE_URL;

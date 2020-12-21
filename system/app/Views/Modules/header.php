@@ -4,7 +4,16 @@
 
 <head>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+	<?php
+	header('Access-Control-Allow-Origin: *');
+header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+header("Allow: GET, POST, OPTIONS, PUT, DELETE");
+$method = $_SERVER['REQUEST_METHOD'];
+if($method == "OPTIONS") {
+    die();
+}
+	?>
 	<title><?= $data['page_title']?></title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
@@ -13,15 +22,15 @@
 	<!-- tags -->
 	<meta name="description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa">
 	<meta name="author" content="Juan Carlos Matheus">
-	<meta property="og:locale" content="en_EN" />
+	<meta property="og:locale" content="es_ES" />
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Viajes, mudanzas y transporte" />
 	<meta property="og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa" />
-	<meta property="og:url" content="https://williamenrique.github.io/mudanza/" />
-	<meta property="og:site_name" content="mahcode.com" />
+	<meta property="og:url" content="http://www.transportemudanzas.cl/" />
+	<meta property="og:site_name" content="http://www.transportemudanzas.cl/" />
 	<!-- <meta property="article:publisher" content="https://www.facebook.com/Mahcode-849841581779986" /> -->
 	<meta property="article:published_time" content="2020-12-10T02:05:30Z" />
-	<meta property="og:image" content="https://williamenrique.github.io/mudanza/src/images/banner.jpg" />
+	<meta property="og:image" content="http://www.transportemudanzas.cl/src/images/publicidad.jpg" />
 	<!-- Favicons -->
 	<link href="<?= IMG ?>favicon(1).png" rel="icon">
 	<link href="<?= IMG ?>apple-touch-icon.png" rel="apple-touch-icon">

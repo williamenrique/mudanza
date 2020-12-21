@@ -1,0 +1,52 @@
+
+DATOS DE LA CUENTA DE HOSTING 
+============================== 
+Plan: Hosting DA1 
+Dominio: transportemudanzas.cl 
+Nombre de Usuario: transpo4 
+Contraseña: 8Oqm@2*ZD01gVm 
+
+Dirección URL del Panel de Control (Provisional): https://server8.globalhostla.com:2222/  o  https://207.38.89.28:2222/
+Cuando tu dominio este propagado, debes acceder de la siguiente manera: http://www.transportemudanzas.cl:2222/ 
+
+
+CONFIGURACIÓN DNS 
+=================== 
+Si vas a usar con este hosting un dominio que tienes registrado con otro proveedor, necesitarás actualizar los servidores de nombre (DNS) a los siguientes para que funcione: 
+
+DNS 1: ns9.globalhostla.com (207.38.89.28) 
+DNS 2: ns10.globalhostla.com (50.30.36.180) 
+
+
+CONFIGURACIÓN DE CORREO ELECTRÓNICO 
+======================================= 
+Si deseas configurar tus correos personalizados con algún gestor como outlook, thunderbird u otro e incluso en tus dispositivos móviles, debes usar los siguientes datos: 
+
+Direccion POP3/IMAP: mail.transportemudanzas.cl 
+Puerto POP3: 110 (predeterminado)  o 995 (SSL)
+Puerto IMAP: 143 (predeterminado) o 993 (SSL)
+
+Direccion SMTP: mail.transportemudanzas.cl 
+Puerto SMTP: 587 (TLS) o 465 (SSL) . No usar el puerto 25.
+
+
+CONFIGURACIÓN FTP 
+=================== 
+Para conectarte vía FTP a tu plan de hosting, usa los datos de acceso indicados en el primer punto. Usa el puerto predeterminado 21 y sube los archivos de tu sitio web dentro del directorio public_html 
+En caso de que no exista al menos un index.html o index.php dentro de public_html al acceder a tu dominio mostrará el error 403 Forbidden. 
+
+CONFIGURACION BASE DE DATOS
+=============================
+HOST :	   localhost
+USERNAME : tranpo4_mudanza
+PASSWORD : Tr@n5p0rt3
+DATABASE : tranpo4_mudanza
+
+
+CORREO DE CONTACTO
+=============================
+Your account contacto@transportemudanzas.cl has been setup. In your e-mail program, use:
+Username:	contacto@transportemudanzas.cl
+Password:	Transpo4
+POP/IMAP Server:	mail.transportemudanzas.cl
+SMTP Server:	mail.transportemudanzas.cl port 587
