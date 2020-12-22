@@ -1,6 +1,6 @@
 <?php
-const BASE_URL = "https://transportemudanzas.cl/";
-// const BASE_URL = "http://mudanzas.cl/";
+// const BASE_URL = "https://transportemudanzas.cl/";
+const BASE_URL = "http://mudanzas.cl/";
 const LIBS = "system/core/Libraries/";
 const VIEWS = "system/app/Views/";
 date_default_timezone_set('America/Caracas');
@@ -20,6 +20,7 @@ const DB_HOST = "localhost";
 const DB_USER = "root";
 const DB_PASS = "";
 const DB_NAME = "bd_mudanza";
+
 // const DB_HOST = "localhost";
 // const DB_USER = "transpo4_mudanza";
 // const DB_PASS = "Tr@n5p0rt3";
@@ -31,6 +32,8 @@ define('METHOD','AES-256-CBC');
 define('SECRET_KEY','Mud@n5a');
 define('SECRET_IV','101712');
 
+
+/* CREAR NUEVAS CONST PARA EL EMAIL */
 // datos de email
 define('SMTPSecure' , 'tls');
 define('Host'       , 'smtp.gmail.com');

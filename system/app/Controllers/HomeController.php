@@ -30,10 +30,102 @@ class Home extends Controllers{
 			$asunto = strClean(ucwords($_POST['asunto']));
 			$mensaje = strClean(ucwords($_POST['mensaje']));
 
-			email($nombre, $email, $asunto, $mensaje);
-			$this->model->setEmail($nombre, $email,$asunto,$mensaje);
+			// email($nombre, $email, $asunto, $mensaje);
+
+
+		$from= "contacto@transportemudanzas.cl";
+		$to = 'william21enrique@gmail.com';
+		$subject = $asunto ;
+		$headers = 'From: ' . $email . PHP_EOL ;
+
+		$message  = "<html><body>";
+		$message .= "<table width='100%' bgcolor='#e0e0e0' cellpadding='0' cellspacing='0' border='0'>";
+		$message .= "<tr><td>";
+		$message .= "<table align='center' width='100%' border='0' cellpadding='0' cellspacing='0' style='max-width:650px; background-color:#fff; font-family:Verdana, Geneva, sans-serif;'>";
+		$message .= "<thead>
+			<tr height='80'>
+			<th colspan='4' style='background-color:#f5f5f5; border-bottom:solid 1px #bdbdbd; font-family:Verdana, Geneva, sans-serif; color:#333; font-size:34px;' >Transporte & Mudanzas</th>
+			</tr>
+								</thead>";
+		$message .= "<tbody>
+									<tr align='center' height='50' style='font-family:Verdana, Geneva, sans-serif;'>
+										<td colspan='4' style='background-color:#00a2d1; text-align:center;'><a href='' style='color:#fff; text-decoration:none; text-transform : uppercase'>Cliente con una inquietud se a comunicado con nosotros</a></td>
+									</tr>
+									<tr>
+										<td colspan='4' style='padding:15px;'>
+											<p style='font-size:16px;'>Hola mi nombre es ' ".$nombre." '.</p>
+											<hr />
+											<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'>".$mensaje.".</p>
+											<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'> Responder a ".$email."</p>
+										</td>
+									</tr>
+									</tbody>";
+		$message .= "</table>";
+		$message .= "</td></tr>";
+		$message .= "</table>";
+		$message .= "</body></html>";
+			// $para      = 'william21enrique@gmail.com';
+			// $titulo    = $asunto;
+			// $mensaje   = $mensaje;
+			// $cabeceras = 'From: contactomudanza@gmail.com' . "\r\n" .
+			// 'Reply-To: '.$email . "\r\n" .
+			// 'X-Mailer: PHP/' . phpversion();
+
+			// $success= 	mail($para, $titulo, $mensaje, $cabeceras);
+		$success =  mail($to, $subject, $message,"MIME-Version: 1.0\nContent-type: text/html; charset=UTF-8\n".$headers."");
+		if (!$success) {
+			$arrResponse = array("status" => false, "msg" => error_get_last()['Ah ocurrido un error']);
+		}else{
+			$this->replyEmail($nombre, $email, $mensaje);
+			$arrResponse = array("status" => true, "msg" => "Gracias por comunicarte con nosotros ".$nombre." pronto seras contactado por nosotros.");
+			// $this->model->setEmail($nombre, $email,$asunto,$mensaje);
+		}
+		echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 		}
 		die();
+	}
+	function replyEmail(string $nombre, string $email, string $mensaje){
+		$nombre = strClean(ucwords($nombre));
+		$email = strClean(strtolower($email));
+		$mensaje = strClean(ucwords($mensaje));
+
+		$from= "contacto@transportemudanzas.cl";
+		$contacto = "william21enrique@gmail.com";
+		$to = $email;
+		$subject = "Copia de email de informacion a Transporte & Mudanzas";
+		$headers = 'From: ' . $from . PHP_EOL ;
+
+		$message  = "<html><body>";
+		$message .= "<table width='100%' bgcolor='#e0e0e0' cellpadding='0' cellspacing='0' border='0'>";
+		$message .= "<tr><td>";
+		$message .= "<table align='center' width='100%' border='0' cellpadding='0' cellspacing='0' style='max-width:650px; background-color:#fff; font-family:Verdana, Geneva, sans-serif;'>";
+		$message .= "<thead>
+			<tr height='80'>
+			<th colspan='4' style='background-color:#f5f5f5; border-bottom:solid 1px #bdbdbd; font-family:Verdana, Geneva, sans-serif; color:#333; font-size:34px;' >Transporte & Mudanzas</th>
+			</tr>
+								</thead>";
+		$message .= "<tbody>
+									<tr align='center' height='50' style='font-family:Verdana, Geneva, sans-serif;'>
+										<td colspan='4' style='background-color:#00a2d1; text-align:center;'><a href='' style='color:#fff; text-decoration:none; text-transform : uppercase'>Gracias por elejirnos pronto seras contactado por nosotros</a></td>
+									</tr>
+									<tr>
+										<td colspan='4' style='padding:15px;'>
+											<p style='font-size:16px;'>Hola ".$nombre.".</p>
+											<hr />
+											<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'>Hemos recibido tu mensaje pronto nos comunicaremos contigo y atenderemos tus inquietudes.</p>
+											<ul>
+												<p style='font-size:14px; font-family:Verdana, Geneva, sans-serif;'> Copida de su pregunta</p>
+												<li style='font-size:12px; font-family:Verdana, Geneva, sans-serif;'>".$mensaje.".</li>
+											</ul>
+											<p style='font-size:15px; font-family:Verdana, Geneva, sans-serif;'> Responder a ".$contacto."</p>
+										</td>
+									</tr>
+									</tbody>";
+		$message .= "</table>";
+		$message .= "</td></tr>";
+		$message .= "</table>";
+		$message .= "</body></html>";
+		mail($to, $subject, $message,"MIME-Version: 1.0\nContent-type: text/html; charset=UTF-8\n".$headers."");
 	}
 	/* envio de comentario crear */
 	public function setComent(){
