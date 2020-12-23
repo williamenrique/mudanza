@@ -430,7 +430,7 @@ class Home extends Controllers{
 																															class='contentEditableContainer contentFacebookEditable'>
 																															<div class='contentEditable'>
 																																<a href='".$sqlDatos['instagram']."'><img
-																																		src='".base_url()."src/images/insta.png' width='52' height='53'
+																																		src='".base_url()."src/images/instagram.png' width='52' height='53'
 																																		alt='Instagram icon' data-default='placeholder'
 																																		data-max-width='52' data-customIcon='true'></a>
 																															</div>
