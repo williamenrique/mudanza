@@ -16,16 +16,16 @@ const CONTROLLER = BASE_URL."system/core/Libraries/Controllers.php";
 const LOAD = BASE_URL."system/core/Libraries/Load.php";
 
 //constantes de base de datos
-const DB_HOST = "localhost";
-const DB_USER = "root";
-const DB_PASS = "";
-const DB_NAME = "bd_mudanza";
-
 // const DB_HOST = "localhost";
-// const DB_USER = "transpo4_mudanza";
-// const DB_PASS = "Tr@n5p0rt3";
-// const DB_NAME = "transpo4_mudanza";
-// const DB_CHARSET = "charset=utf8";
+// const DB_USER = "root";
+// const DB_PASS = "";
+// const DB_NAME = "bd_mudanza";
+
+const DB_HOST = "localhost";
+const DB_USER = "transpo4_mudanza";
+const DB_PASS = "Tr@n5p0rt3";
+const DB_NAME = "transpo4_mudanza";
+const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
 define('METHOD','AES-256-CBC');
@@ -34,6 +34,7 @@ define('SECRET_IV','101712');
 
 
 /* CREAR NUEVAS CONST PARA EL EMAIL */
+const EMAIL = "contacto@transportemudanzas.cl";
 // datos de email
 define('SMTPSecure' , 'tls');
 define('Host'       , 'smtp.gmail.com');

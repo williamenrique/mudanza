@@ -3,11 +3,9 @@
 	getModal('modalComent',$data);
 ?>
 <main id="main">
-
 	<!-- ======= About Section ======= -->
 	<?php modules('acerca',$data)  ?>
 	<!-- End Services Section -->
-
 
 	<!-- ======= Clients Section ======= -->
 
@@ -38,12 +36,12 @@
 
 			<div class="row">
 				<div class="section-header">
-				<h2>Deja tu comentario</h2>
-				<button type="button" class="btn btnComent" onclick="openModal()">Comenta aqui</button>
-			</div>
-			<div class="comments-container">
+					<h2>Deja tu comentario</h2>
+					<button type="button" class="btn btnComent" onclick="openModal()">Comenta aqui</button>
+				</div>
+				<div class="comments-container">
 
-			</div>
+				</div>
 			</div>
 		</div>
 
