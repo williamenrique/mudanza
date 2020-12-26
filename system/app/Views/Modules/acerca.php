@@ -39,15 +39,6 @@
 			<div class="row">
 
 				<div class="col-lg-6">
-					<div class="box wow fadeInLeft">
-						<div class="icon"><i class="fa fa-bar-chart"></i></div>
-						<h4 class="title"><a href="">Mudanzas</a></h4>
-						<p class="description">En Transporte JCM Realizamos pequeñas y grandes mudanzas de hogares, empresas e
-							instituciones a cualquier lugar en chile.</p>
-					</div>
-				</div>
-
-				<div class="col-lg-6">
 					<div class="box wow fadeInRight">
 						<div class="icon"><i class="fa fa-picture-o"></i></div>
 						<h4 class="title"><a href="">Fletes locales</a></h4>
@@ -66,7 +57,14 @@
 							asegurándonos de proteger sus pertenencias durante el transporte y/o almacenamiento.</p>
 					</div>
 				</div>
-
+				<div class="col-lg-6">
+					<div class="box wow fadeInLeft">
+						<div class="icon"><i class="fa fa-bar-chart"></i></div>
+						<h4 class="title"><a href="">Mudanzas</a></h4>
+						<p class="description">En Transporte JCM Realizamos pequeñas y grandes mudanzas de hogares, empresas e
+							instituciones a cualquier lugar en chile.</p>
+					</div>
+				</div>
 				<div class="col-lg-12">
 					<!-- <div class="box wow fadeInRight" data-wow-delay="0.2s">
 						<div class="icon"><i class="fa fa-map"></i></div>
