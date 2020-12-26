@@ -4,7 +4,7 @@
 
 <head>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 	<?php
 	header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
@@ -45,7 +45,8 @@ if($method == "OPTIONS") {
 	<link href="<?= PLUGINS ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>ionicons/css/ionicons.min.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>animate.css/animate.min.css" rel="stylesheet">
-	<link href="<?= PLUGINS ?>font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+	<!-- <link href="<?= PLUGINS ?>font-awesome/css/font-awesome.min.css" rel="stylesheet"> -->
 	<link href="<?= PLUGINS ?>venobox/venobox.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>boxicons/css/boxicons.min.css" rel="stylesheet">
