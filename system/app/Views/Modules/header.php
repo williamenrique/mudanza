@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="es"
 	class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths">
 
 <head>
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta charset="UTF-8">
 	<?php
 	header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
@@ -28,7 +29,7 @@ if($method == "OPTIONS") {
 	<meta property="og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa" />
 	<meta property="og:url" content="http://www.transportemudanzas.cl/" />
 	<meta property="og:site_name" content="http://www.transportemudanzas.cl/" />
-	<!-- <meta property="article:publisher" content="https://www.facebook.com/Mahcode-849841581779986" /> -->
+	<meta property="article:publisher" content="https://www.facebook.com/Transportejcm-104536918173737" />
 	<meta property="article:published_time" content="2020-12-10T02:05:30Z" />
 	<meta property="og:image" content="http://www.transportemudanzas.cl/src/images/publicidad.jpg" />
 	<!-- Favicons -->

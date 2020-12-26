@@ -28,9 +28,9 @@
 
 		<nav id="nav-menu-container">
 			<ul class="nav-menu">
-				<li class="menu-active"><a href="<?= base_url()?>">Home</a></li>
+				<!-- <li class="menu-active"><a href="<?= base_url()?>">Inicio</a></li> -->
 				<li><a href="#about">Acerca</a></li>
-				<li><a href="#services">Services</a></li>
+				<li><a href="#services">Servicios</a></li>
 				<!-- <li><a href="#portfolio">Portfolio</a></li> -->
 				<!-- <li><a href="#team">Team</a></li> -->
 				<!-- <li class="menu-has-children"><a href="">Drop Down</a>
