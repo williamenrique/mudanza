@@ -1,4 +1,4 @@
-	<div class="coments">
+	<div class="coments" id="coments">
 		<div class="container">
 
 			<div class="section-header">
