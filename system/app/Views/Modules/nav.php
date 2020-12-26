@@ -2,13 +2,13 @@
 <section id="topbar" class="d-none d-lg-block">
 	<div class="container clearfix">
 		<div class="float-left contact-info">
-			<i class="fa fa-envelope-o"></i> <a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a>
-			<i class="fa fa-phone"></i> <?= $data["page_tlf"]?>
+			<i class="far fa-envelope"></i> <a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a>
+			<i class="fas fa-phone"></i> <?= $data["page_tlf"]?>
 		</div>
 		<div class="float-right social-links">
-			<a href="<?= $data["page_twitter"]?>" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
-			<a href="<?= $data["page_facebook"]?>" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-			<a href="<?= $data["page_instagram"]?>" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+			<a href="<?= $data["page_twitter"]?>" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+			<a href="<?= $data["page_facebook"]?>" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
+			<a href="<?= $data["page_instagram"]?>" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
 			<!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
 			<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a> -->
 		</div>

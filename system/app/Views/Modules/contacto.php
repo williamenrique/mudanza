@@ -11,7 +11,7 @@
 
 				<div class="col-md-4">
 					<div class="contact-address">
-						<i class="ion-ios-location-outline"></i>
+						<i class="fas fa-location-arrow"></i>
 						<h3>Direccion</h3>
 						<address><?= $data["page_direccion"]?></address>
 					</div>
@@ -19,7 +19,7 @@
 
 				<div class="col-md-4">
 					<div class="contact-phone">
-						<i class="ion-ios-telephone-outline"></i>
+						<i class="fas fa-phone"></i>
 						<h3>Numero telefonico</h3>
 						<p><a href="tel:<?= $data["page_tlf"]?>"><?= $data["page_tlf"]?>97</a></p>
 					</div>
@@ -27,7 +27,7 @@
 
 				<div class="col-md-4">
 					<div class="contact-email">
-						<i class="ion-ios-email-outline"></i>
+						<i class="far fa-envelope"></i>
 						<h3>Email</h3>
 						<p><a href="mailto:<?= $data["page_email"]?>"><?= $data["page_email"]?></a></p>
 					</div>
@@ -38,9 +38,8 @@
 
 		<div class="container mb-4">
 
-			<iframe
-				src="<?= $data["page_location"]?>"
-				width="100%" height="380" frameborder="0" style="border:0" allowfullscreen></iframe>
+			<iframe src="<?= $data["page_location"]?>" width="100%" height="380" frameborder="0" style="border:0"
+				allowfullscreen></iframe>
 		</div>
 		<div class="container">
 			<div class="section-header">
@@ -50,8 +49,8 @@
 				<form role="form" class="php-email-form" id="formEmail">
 					<div class="form-row">
 						<div class="form-group col-md-6">
-							<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu Nombre" data-rule="minlen:4"
-								data-msg="Por favor ingrese minimo de 4 caracteres" />
+							<input type="text" name="nombre" class="form-control" id="nombre" placeholder="Tu Nombre"
+								data-rule="minlen:4" data-msg="Por favor ingrese minimo de 4 caracteres" />
 							<div class="validate"></div>
 						</div>
 						<div class="form-group col-md-6">

@@ -39,8 +39,8 @@
 			<div class="row">
 
 				<div class="col-lg-6">
-					<div class="box wow fadeInRight">
-						<div class="icon"><i class="fa fa-picture-o"></i></div>
+					<div class="box wow  fadeInLeft">
+						<div class="icon"><i class="fas fa-truck-pickup"></i></div>
 						<h4 class="title"><a href="">Fletes locales</a></h4>
 						<p class="description">En Transporte JCM el manejo óptimo de nuestros fletes locales significa los mejores
 							resultados para su empresa, comprendemos la importancia del comercio nacional conociendo el funcionamiento
@@ -49,8 +49,8 @@
 				</div>
 
 				<div class="col-lg-6">
-					<div class="box wow fadeInLeft" data-wow-delay="0.2s">
-						<div class="icon"><i class="fa fa-shopping-bag"></i></div>
+					<div class="box wow fadeInRight" data-wow-delay="0.2s">
+						<div class="icon"><i class="fas fa-shopping-bag"></i></div>
 						<h4 class="title"><a href="">Embalajes</a></h4>
 						<p class="description">En Transporte JCM le ofrecemos un servicio de embalaje y desempaque de pertenencias y
 							mobiliario, realizado por manos expertas. Trabajamos con componentes para embalajes de excelente calidad,
@@ -58,8 +58,8 @@
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<div class="box wow fadeInLeft">
-						<div class="icon"><i class="fa fa-bar-chart"></i></div>
+					<div class="box wow fadeInDown">
+						<div class="icon"><i class="fas fa-shipping-fast"></i></div>
 						<h4 class="title"><a href="">Mudanzas</a></h4>
 						<p class="description">En Transporte JCM Realizamos pequeñas y grandes mudanzas de hogares, empresas e
 							instituciones a cualquier lugar en chile.</p>
