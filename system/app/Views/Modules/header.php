@@ -27,11 +27,11 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content="Viajes, mudanzas y transporte" />
 	<meta property="og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa" />
-	<meta property="og:url" content="http://www.transportemudanzas.cl/" />
-	<meta property="og:site_name" content="http://www.transportemudanzas.cl/" />
+	<meta property="og:url" content="https://transportemudanzas.cl/" />
+	<meta property="og:site_name" content="https://transportemudanzas.cl/" />
 	<meta property="article:publisher" content="https://www.facebook.com/Transportejcm-104536918173737" />
-	<meta property="article:published_time" content="2020-12-10T02:05:30Z" />
-	<meta property="og:image" content="http://www.transportemudanzas.cl/src/images/publicidad.jpg" />
+	<meta property="article:published_time" content="2021-11-20T02:05:30Z" />
+	<meta property="og:image" content="https://transportemudanzas.cl/src/images/publicidad.jpg" />
 	<!-- Favicons -->
 	<link href="<?= IMG ?>favicon(1).png" rel="icon">
 	<link href="<?= IMG ?>apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,6 +55,11 @@
 	<!-- Template Main CSS File -->
 	<link href="<?= CSS ?>style.main.css" rel="stylesheet">
 	<link href="<?= CSS ?>style.css" rel="stylesheet">
+
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous"
+		src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=755936868604541&autoLogAppEvents=1"
+		nonce="WK7tNBRk"></script>
 </head>
 
 <body>

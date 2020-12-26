@@ -35,6 +35,7 @@ define('SECRET_IV','101712');
 
 /* CREAR NUEVAS CONST PARA EL EMAIL */
 const EMAIL = "contacto@transportemudanzas.cl";
+const CONTACTO = "transportejcm1286@gmail.com";
 // datos de email
 // define('SMTPSecure' , 'tls');
 // define('Host'       , 'smtp.gmail.com');
