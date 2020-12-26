@@ -58,7 +58,7 @@
 					</div>
 				</div>
 				<div class="col-lg-6">
-					<div class="box wow fadeInDown">
+					<div class="box wow fadeIn">
 						<div class="icon"><i class="fas fa-shipping-fast"></i></div>
 						<h4 class="title"><a href="">Mudanzas</a></h4>
 						<p class="description">En Transporte JCM Realizamos pequeñas y grandes mudanzas de hogares, empresas e
