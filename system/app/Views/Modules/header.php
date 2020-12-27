@@ -21,17 +21,20 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<meta name="robots" content="noindex">
 	<!-- tags -->
-	<meta name="description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa">
+	<meta name="description" content=" Nuestro compromiso se basa en la calidad de nuestro servicio, en el cumplimiento de los
+						plazos, y en la utilización de un personal altamente especializado y capacitado, generando así, la
+						satisfacción total de nuestros clientes.">
 	<meta name="author" content="Juan Carlos Matheus">
 	<meta property="og:locale" content="es_ES" />
-	<meta property="og:type" content="article" />
-	<meta property="og:title" content="Viajes, mudanzas y transporte" />
-	<meta property="og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa" />
-	<meta property="og:url" content="https://transportemudanzas.cl/" />
 	<meta property="og:site_name" content="https://transportemudanzas.cl/" />
-	<meta property="article:publisher" content="https://www.facebook.com/Transportejcm-104536918173737" />
-	<meta property="article:published_time" content="2021-11-20T02:05:30Z" />
-	<meta property="og:image" content="https://transportemudanzas.cl/src/images/publicidad.jpg" />
+
+	<meta property="og:url"           content="https://transportemudanzas.cl/" />
+	<meta property="og:type"          content="website" />
+	<meta property="og:title"         content="Viajes, mudanzas y transporte"" />
+	<meta property="og:description"   content="Web de mudanzas y transporte en todo chile post de nuestra empresa. Nuestro compromiso se basa en la calidad de nuestro servicio, en el cumplimiento de los
+						plazos, y en la utilización de un personal altamente especializado y capacitado, generando así, la
+						satisfacción total de nuestros clientes." />
+	<meta property="og:image"         content="https://transportemudanzas.cl/src/images/publicidad.jpg" />
 	<!-- Favicons -->
 	<link href="<?= IMG ?>favicon(1).png" rel="icon">
 	<link href="<?= IMG ?>apple-touch-icon.png" rel="apple-touch-icon">
@@ -55,12 +58,14 @@
 	<!-- Template Main CSS File -->
 	<link href="<?= CSS ?>style.main.css" rel="stylesheet">
 	<link href="<?= CSS ?>style.css" rel="stylesheet">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=192787595877367&autoLogAppEvents=1" nonce="JnKWBhaM"></script>
 
-	<div id="fb-root"></div>
-	<script async defer crossorigin="anonymous"
-		src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v9.0&appId=755936868604541&autoLogAppEvents=1"
-		nonce="WK7tNBRk"></script>
 </head>
 
 <body>
 	<?php require_once 'nav.php'?>
+
+<div class="fb-share-button" data-href="https://transportemudanzas.cl/" data-layout="button_count" data-size="small">
+<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftransportemudanzas.cl%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Compartir</a>
+</div>

@@ -8,13 +8,22 @@
 		<div class="credits">
 			Designed by <a href="#">WM</a>
 		</div>
+		<div class="box-face">
+			<span>Si te gusta la pagina </span>
+			<div class="fb-share-button" data-href="https://transportemudanzas.cl/" data-layout="button_count" data-size="small">
+				<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Ftransportemudanzas.cl%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">
+				</a>
+			</div>
+		</div>
 	</div>
 </footer><!-- End Footer -->
 
 <!-- boton facebook -->
-<div class="share-fb" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
+<div class="" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
 	<div style="display: flex; justify-content: center; align-items: center;  ">
-		<img src="<?= IMG ?>facebook.png" alt="" width="40" heith="40">
+		<a href="https://www.facebook.com/Transportejcm-104536918173737" target="_blank" rel="noopener noreferrer">
+			<img src="<?= IMG ?>facebook.png" alt="" width="40" heith="40">
+		</a>
 	</div>
 </div>
 <!-- boton whatsapp -->

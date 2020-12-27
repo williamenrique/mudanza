@@ -368,6 +368,9 @@ a:hover, a:active, a:focus {
   z-index: 997;
   background: #fff;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 #header #logo h1 {
@@ -383,11 +386,6 @@ a:hover, a:active, a:focus {
   color: #0c2e8a;
   line-height: 1;
   display: inline-block;
-  font-size: 28px;
-}
-
-#header #logo h1 a span {
-  color: #f51114;
 }
 
 #header #logo img {
@@ -410,7 +408,7 @@ a:hover, a:active, a:focus {
     height: 74px;
   }
   #header #logo h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   #header #logo img {
     max-height: 40px;
@@ -883,16 +881,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-top: 50px;
 }
 
-@media (max-width: 768px) {
-  #about .about-img {
-    height: auto;
-  }
-  #about .about-img img {
-    margin-left: 0;
-    padding-bottom: 30px;
-  }
-}
-
 #about .content h2 {
   color: #0c2e8a;
   font-weight: 700;
@@ -930,6 +918,25 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #about .content ul li {
   padding-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  #about .about-img {
+    height: auto;
+  }
+  #about .about-img img {
+    margin-left: 0;
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about .content h2 {
+    font-size: 26px;
+  }
+  #about .content h3 {
+    line-height: 22px;
+  }
 }
 
 /* Services Section
@@ -1010,13 +1017,61 @@ body.mobile-nav-active #mobile-nav-toggle {
     text-align: center;
     padding-bottom: 15px;
   }
-  #services .box h4, #services .box p {
+  #services .box h4 {
     margin-left: 0;
     text-align: center;
   }
+  #services .box p {
+    margin-left: 0;
+  }
 }
 
-.cta-text {
+#call-to-action {
+  background: #081e5b;
+  background-size: cover;
+  padding: 40px 0;
+}
+
+#call-to-action .cta-title {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#call-to-action .cta-text {
   text-align: justify;
+}
+
+@media (min-width: 769px) {
+  #call-to-action .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  #call-to-action {
+    background: #081e5b;
+    background-size: cover;
+    padding: 40px 0;
+  }
+  #call-to-action .cta-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+  }
+  #call-to-action .cta-text {
+    text-align: justify;
+  }
+}
+
+#footer .box-face {
+  text-align: center;
+  padding-top: 5px;
+}
+
+#footer .box-face span {
+  color: #555;
 }
 /*# sourceMappingURL=style.main.css.map */

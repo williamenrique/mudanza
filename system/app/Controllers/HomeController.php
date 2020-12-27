@@ -799,15 +799,6 @@ class Home extends Controllers{
 																													</td>
 																													<td valign='top' width='16'>&nbsp;</td>
 																													<td valign='top' width='52'>
-																														<div
-																															class='contentEditableContainer contentTwitterEditable'>
-																															<div class='contentEditable'>
-																																<a target='_blank' href='".$sqlDatos['twitter']."'><img
-																																		src='".base_url()."src/images/twitter.png' width='52' height='53'
-																																		alt='twitter icon' data-default='placeholder'
-																																		data-max-width='52' data-customIcon='true'></a>
-																															</div>
-																														</div>
 																													</td>
 																												</tr>
 																											</tbody>

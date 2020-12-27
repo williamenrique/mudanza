@@ -263,11 +263,11 @@ h1, h2, h3, h4, h5, h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* Nav Menu Essentials */
-.nav-menu, .nav-menu * {
+/* .nav-menu, .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
-}
+} */
 
 .nav-menu ul {
   position: absolute;
@@ -1020,29 +1020,29 @@ section {
 
 /* Call To Action Section
 --------------------------------*/
-#call-to-action {
+/* #call-to-action {
   background: #081e5b;
   background-size: cover;
   padding: 40px 0;
-}
+} */
 
-#call-to-action .cta-title {
+/* #call-to-action .cta-title {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
-}
+} */
 
 #call-to-action .cta-text {
   color: #fff;
 }
 
-@media (min-width: 769px) {
+/* @media (min-width: 769px) {
   #call-to-action .cta-btn-container {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-}
+} */
 
 #call-to-action .cta-btn {
   font-family: "Montserrat", sans-serif;

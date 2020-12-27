@@ -6,7 +6,6 @@
 			<i class="fas fa-phone"></i> <?= $data["page_tlf"]?>
 		</div>
 		<div class="float-right social-links">
-			<a href="<?= $data["page_twitter"]?>" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
 			<a href="<?= $data["page_facebook"]?>" target="_blank" class="facebook"><i class="fab fa-facebook-square"></i></a>
 			<a href="<?= $data["page_instagram"]?>" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
 			<!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
@@ -17,7 +16,7 @@
 
 <!-- ======= Header ======= -->
 <header id="header">
-	<div class="container">
+	<div class="container d-flex align-align-content-center justify-content-between">
 
 		<div id="logo" class="pull-left">
 
@@ -46,7 +45,8 @@
 			</ul>
 		</nav><!-- #nav-menu-container -->
 	</div>
-</header><!-- End Header -->
+</header>
+<!-- End Header -->
 
 <!-- ======= Intro Section ======= -->
 <section id="intro">
