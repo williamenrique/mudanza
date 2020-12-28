@@ -19,13 +19,13 @@
 </footer><!-- End Footer -->
 
 <!-- boton facebook -->
-<div class="" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
+<!-- <div class="" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
 	<div style="display: flex; justify-content: center; align-items: center;  ">
 		<a href="https://www.facebook.com/Transportejcm-104536918173737" target="_blank" rel="noopener noreferrer">
 			<img src="<?= IMG ?>facebook.png" alt="" width="40" heith="40">
 		</a>
 	</div>
-</div>
+</div> -->
 <!-- boton whatsapp -->
 <div onclick="ht_ctc_click(this);" class="ht-ctc ht-ctc-chat ctc_wp_desktop ctc-analytics style-2 ht_ctc_animation null"
 	style="position: fixed; bottom: 15px; left: 15px; cursor: pointer; z-index: 99999999;" data-return_type="chat"
@@ -55,7 +55,6 @@
 <script src="<?= PLUGINS ?>hoverIntent/hoverIntent.js"></script>
 <script src="<?= PLUGINS ?>isotope-layout/isotope.pkgd.min.js"></script>
 <script src="<?= PLUGINS ?>sweetalert/sweetalert2@10.js"></script>
-<!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script> -->
 
 <!-- Template Main JS File -->
 <script>
