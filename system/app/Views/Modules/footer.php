@@ -42,12 +42,12 @@
 <script src="<?= PLUGINS ?>jquery.easing/jquery.easing.min.js"></script>
 <script src="<?= PLUGINS ?>php-email-form/validate.js"></script>
 <script src="<?= PLUGINS ?>wow/wow.min.js"></script>
-<script src="<?= PLUGINS ?>venobox/venobox.min.js"></script>
-<script src="<?= PLUGINS ?>owl.carousel/owl.carousel.min.js"></script>
+<!-- <script src="<?= PLUGINS ?>venobox/venobox.min.js"></script> -->
+<!-- <script src="<?= PLUGINS ?>owl.carousel/owl.carousel.min.js"></script> -->
 <script src="<?= PLUGINS ?>jquery-sticky/jquery.sticky.js"></script>
 <script src="<?= PLUGINS ?>superfish/superfish.min.js"></script>
-<script src="<?= PLUGINS ?>hoverIntent/hoverIntent.js"></script>
-<script src="<?= PLUGINS ?>isotope-layout/isotope.pkgd.min.js"></script>
+<!-- <script src="<?= PLUGINS ?>hoverIntent/hoverIntent.js"></script> -->
+<!-- <script src="<?= PLUGINS ?>isotope-layout/isotope.pkgd.min.js"></script> -->
 <script src="<?= PLUGINS ?>sweetalert/sweetalert2@10.js"></script>
 
 <!-- Template Main JS File -->

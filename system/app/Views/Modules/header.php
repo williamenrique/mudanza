@@ -33,8 +33,8 @@
 	<link href="<?= PLUGINS ?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<link href="<?= PLUGINS ?>animate.css/animate.min.css" rel="stylesheet">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-	<link href="<?= PLUGINS ?>venobox/venobox.css" rel="stylesheet">
-	<link href="<?= PLUGINS ?>owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+	<!-- <link href="<?= PLUGINS ?>venobox/venobox.css" rel="stylesheet"> -->
+	<!-- <link href="<?= PLUGINS ?>owl.carousel/assets/owl.carousel.min.css" rel="stylesheet"> -->
 	<link href="<?= PLUGINS ?>sweetalert/sweetalert2.css" rel="stylesheet">
 
 	<!-- Template Main CSS File -->
