@@ -30,15 +30,15 @@
   });
 
   // Initiate the wowjs animation library
-  new WOW().init();
+  // new WOW().init();
 
   // Initiate superfish on nav menu
-  $('.nav-menu').superfish({
-    animation: {
-      opacity: 'show'
-    },
-    speed: 400
-  });
+  // $('.nav-menu').superfish({
+  //   animation: {
+  //     opacity: 'show'
+  //   },
+  //   speed: 400
+  // });
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
