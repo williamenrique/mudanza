@@ -1,6 +1,6 @@
-!(function ($) {
+!(function($) {
   "use strict";
-	  // Preloader
+  // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function() {
@@ -28,17 +28,6 @@
     topSpacing: 0,
     zIndex: '50'
   });
-
-  // Initiate the wowjs animation library
-  // new WOW().init();
-
-  // Initiate superfish on nav menu
-  // $('.nav-menu').superfish({
-  //   animation: {
-  //     opacity: 'show'
-  //   },
-  //   speed: 400
-  // });
 
   // Mobile Navigation
   if ($('#nav-menu-container').length) {
@@ -150,55 +139,56 @@
 
 
 function soloNumeros(e) {
-	key = e.keyCode || e.which;
-	tecla = String.fromCharCode(key).toLowerCase();
-	letras = "0123456789";
-	especiales = "8-37-39-46";
+  key = e.keyCode || e.which;
+  tecla = String.fromCharCode(key).toLowerCase();
+  letras = "0123456789";
+  especiales = "8-37-39-46";
 
-	tecla_especial = false
-	for (var i in especiales) {
-		if (key == especiales[i]) {
-			tecla_especial = true;
-			break;
-		}
-	}
+  tecla_especial = false
+  for (var i in especiales) {
+    if (key == especiales[i]) {
+      tecla_especial = true;
+      break;
+    }
+  }
 
-	if (letras.indexOf(tecla) == -1 && !tecla_especial) {
-		return false;
-	}
+  if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+    return false;
+  }
 }
+
 function soloLetras(e) {
-	key = e.keyCode || e.which;
-	tecla = String.fromCharCode(key).toLowerCase();
-	letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
-	especiales = "8-37-39-46";
+  key = e.keyCode || e.which;
+  tecla = String.fromCharCode(key).toLowerCase();
+  letras = " áéíóúabcdefghijklmnñopqrstuvwxyz";
+  especiales = "8-37-39-46";
 
-	tecla_especial = false
-	for (var i in especiales) {
-		if (key == especiales[i]) {
-			tecla_especial = true;
-			break;
-		}
-	}
+  tecla_especial = false
+  for (var i in especiales) {
+    if (key == especiales[i]) {
+      tecla_especial = true;
+      break;
+    }
+  }
 
-	if (letras.indexOf(tecla) == -1 && !tecla_especial) {
-		return false;
-	}
+  if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+    return false;
+  }
 }
 /****
  * funcion para la notificacion
  */
 function notifi(data, icon) {
-	$(function () {
-		var Toast = Swal.mixin({
-			toast: true,
-			position: 'top-end',
-			showConfirmButton: false,
-			timer: 3000
-		})
-		Toast.fire({
-			icon: icon,
-			title: data
-		})
-	})
+  $(function() {
+    var Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    })
+    Toast.fire({
+      icon: icon,
+      title: data
+    })
+  })
 }
