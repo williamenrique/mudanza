@@ -39,6 +39,7 @@
 <script src="<?= PLUGINS ?>jquery/jquery.min.js"></script>
 <script src="<?= PLUGINS ?>whatsapp/app.min.js"></script>
 <script src="<?= PLUGINS ?>bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="<?= PLUGINS ?>jquery.easing/jquery.easing.min.js"></script>
 <script src="<?= PLUGINS ?>php-email-form/validate.js"></script>
 <script src="<?= PLUGINS ?>jquery-sticky/jquery.sticky.js"></script>
 <script src="<?= PLUGINS ?>sweetalert/sweetalert2@10.js"></script>
