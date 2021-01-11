@@ -23,9 +23,9 @@ const DB_NAME = "bd_mudanza";
 const DB_CHARSET = "charset=utf8";
 
 // const DB_HOST = "localhost";
-// const DB_USER = "transpo4_mudanza";
-// const DB_PASS = "Tr@n5p0rt3";
-// const DB_NAME = "transpo4_mudanza";
+// const DB_USER = "transportemudanzas_app";
+// const DB_PASS = "53hlBBMgj";
+// const DB_NAME = "transportemudanzas_app";
 // const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
