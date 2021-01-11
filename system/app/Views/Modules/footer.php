@@ -15,7 +15,7 @@
 <!-- boton facebook -->
 <div class="" style="position: fixed; bottom: 60px; left: 15px; cursor: pointer; z-index: 99999999;">
 	<div style="display: flex; justify-content: center; align-items: center;  ">
-		<a href="https://www.facebook.com/Transportejcm-104536918173737" target="_blank" rel="noopener noreferrer">
+		<a href="<?= $data['page_facebook']?>" target="_blank" rel="noopener noreferrer">
 			<img src="<?= IMG ?>facebook.png" alt="" width="40" heith="40">
 		</a>
 	</div>
