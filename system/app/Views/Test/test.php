@@ -31,7 +31,7 @@
 	<!-- End Contact Section -->
 
 	<!-- ======= Comentario Section ======= -->
-	<!-- <div class="coments" id="coments">
+	<div class="coments" id="coments">
 		<div class="container">
 
 			<div class="row">
@@ -45,7 +45,7 @@
 			</div>
 		</div>
 
-	</div> -->
+	</div>
 	<!-- End comentario Section -->
 </main><!-- End #main -->
 <?php footer($data) ?>

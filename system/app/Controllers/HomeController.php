@@ -1,9 +1,9 @@
 <?php
 	header('Access-Control-Allow-Origin: *');
-    header("Access-Control-Allow-Origin: https://transportemudanzas.cl/");
+	header("Access-Control-Allow-Origin: https://transportemudanzas.cl/");
 	header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
 	header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-    header ("Access-Control-Allow-Headers: origin, x-requested-with, content-type");
+	header ("Access-Control-Allow-Headers: origin, x-requested-with, content-type");
 
 class Home extends Controllers{
 	public function __construct(){
@@ -942,6 +942,10 @@ class Home extends Controllers{
 											';
 		}
 		echo $htmlOptions;
+		ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 		die();
 	}
 
