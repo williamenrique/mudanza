@@ -1,5 +1,10 @@
 <?php
-header('Access-Control-Allow-Origin: *');
+	header('Access-Control-Allow-Origin: *');
+    header("Access-Control-Allow-Origin: https://transportemudanzas.cl/");
+	header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
+	header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
+    header ("Access-Control-Allow-Headers: origin, x-requested-with, content-type");
+
 class Home extends Controllers{
 	public function __construct(){
 		//invocar para que se ejecute el metodo de la herencia
@@ -878,7 +883,9 @@ class Home extends Controllers{
 
 	/* obtener los comentarios */
 	public function getComents(){
+    header('Content-Type: application/json'); 
 		$arrData = $this->model->selectComents();
+        //dep($arrData);
 		$htmlOptions = "";
 		if(empty($arrData)){
 			$htmlOptions .= '
