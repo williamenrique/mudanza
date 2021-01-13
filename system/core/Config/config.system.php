@@ -20,13 +20,13 @@ const DB_HOST = "localhost";
 const DB_USER = "root";
 const DB_PASS = "";
 const DB_NAME = "bd_mudanza";
-const DB_CHARSET = "charset=utf8";
 
 // const DB_HOST = "localhost";
 // const DB_USER = "transportemudanzas_app";
 // const DB_PASS = "53hlBBMgj";
 // const DB_NAME = "transportemudanzas_app";
-// const DB_CHARSET = "charset=utf8";
+
+const DB_CHARSET = "charset=utf8";
 
 //constantes de encriptacion
 define('METHOD','AES-256-CBC');
