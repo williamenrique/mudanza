@@ -110,25 +110,6 @@ function fntComent() {
   }
 }
 
-// function fntComent() {
-//   if (document.querySelector('.comments-container')) {
-//     let ajaxUrl = base_url + "Home/getComents";
-//     $.ajax({
-//       dataType: "html",
-//       url: ajaxUrl,
-//       contentType: "application/x-www-form-urlencoded; charset=UTF-8",
-//       success: function(data) {
-//         document.querySelector('.comments-container').innerHTML = data;
-//       },
-//       error: function(data) {
-//         console.log(data);
-//       }
-//     })
-//   }
-// }
-
-
-
 /* contestar el comentario */
 function fntReply(id) {
   document.querySelector('#idComent').value = ''; //limpiar el value del input hiden del modal

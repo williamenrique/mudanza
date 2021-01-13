@@ -25,6 +25,7 @@ class Home extends Controllers{
 		$this->views->getViews($this, "home",$data);
 	}
 
+	// user php mailer
 	public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
 		$nombre = strClean(ucwords($_POST['nombre']));
 		$email = strClean(strtolower($_POST['email']));
