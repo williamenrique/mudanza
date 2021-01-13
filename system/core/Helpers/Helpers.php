@@ -191,6 +191,7 @@ function cargar_menu (string $strNick){
 	}
 }
 
+
 function email(string $nombre, string $email, string $asunto, string $mensaje){
 	require_once 'system/core/PHPMailer/send_mail.php';
 	$destinatario = $email;
@@ -290,6 +291,3 @@ function email(string $nombre, string $email, string $asunto, string $mensaje){
 
 // 	mail($to, $subject, $cuerpo,"MIME-Version: 1.0\nContent-type: text/html; charset=UTF-8\n".$headers."");
 // }
-
-
-

@@ -1,10 +1,5 @@
 <?php
-	header('Access-Control-Allow-Origin: *');
-	header("Access-Control-Allow-Origin: https://transportemudanzas.cl/");
-	header("Access-Control-Allow-Headers: X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method");
-	header("Access-Control-Allow-Methods: GET, POST, OPTIONS, PUT, DELETE");
-	header ("Access-Control-Allow-Headers: origin, x-requested-with, content-type");
-
+header('Access-Control-Allow-Origin: *');
 class Home extends Controllers{
 	public function __construct(){
 		//invocar para que se ejecute el metodo de la herencia
@@ -29,8 +24,14 @@ class Home extends Controllers{
 		$data['page_function'] = "function.main.js";
 		$this->views->getViews($this, "home",$data);
 	}
-	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
-	public function sendEmail(){
+
+	public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
+		$nombre = strClean(ucwords($_POST['nombre']));
+		$email = strClean(strtolower($_POST['email']));
+		$asunto = strClean(ucwords($_POST['asunto']));
+		$mensaje = strClean(ucwords($_POST['mensaje']));
+	}
+	public function endEmail(){
 		if($_POST){
 			$nombre = strClean(ucwords($_POST['nombre']));
 			$email = strClean(strtolower($_POST['email']));
@@ -43,7 +44,8 @@ class Home extends Controllers{
 			$from= EMAIL;
 			$to = CONTACTO;
 			$subject = $asunto ;
-			$headers = 'From: ' . $email . PHP_EOL ;
+			$headers = 'From: ' . $email ;
+			// $headers = 'From: ' . $email . PHP_EOL ;
 			$fecha = formatear_fecha(date('Y-m-d'));
 			/* local */
 			// $from= "william21enrique@gmail.com";
@@ -422,9 +424,10 @@ class Home extends Controllers{
 </body>
 
 </html>";
+
 			$success =  mail($to, $subject, $message,"MIME-Version: 1.0\nContent-type: text/html; charset=UTF-8\n".$headers."");
 			if (!$success) {
-				$arrResponse = array("status" => false, "msg" => error_get_last()['Ah ocurrido un error']);
+				$arrResponse = array("status" => false, "msg" => 'Ah ocurrido un error');
 			}else{
 				$this->replyEmail($nombre, $email, $mensaje);
 				$arrResponse = array("status" => true, "msg" => "Gracias por comunicarte con nosotros ".$nombre." pronto seras contactado por nosotros.");
@@ -883,7 +886,6 @@ class Home extends Controllers{
 
 	/* obtener los comentarios */
 	public function getComents(){
-    header('Content-Type: application/json'); 
 		$arrData = $this->model->selectComents();
         //dep($arrData);
 		$htmlOptions = "";
@@ -943,10 +945,10 @@ class Home extends Controllers{
 		}
 		echo $htmlOptions;
 		ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+		ini_set('display_startup_errors', 1);
+		error_reporting(E_ALL);
 
-		die();
+		//die();
 	}
 
 	/* obtener un solo comentario */

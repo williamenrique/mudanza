@@ -96,14 +96,15 @@ function fntComent() {
   if (document.querySelector('.comments-container')) {
     let ajaxUrl = base_url + "Home/getComents";
     //creamos el objeto para os navegadores
-    var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+    let response = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
     //abrimos la conexion y enviamos los parametros para la peticion
-    request.open("GET", ajaxUrl, true);
-    request.send();
-    request.onreadystatechange = function() {
-      if (request.readyState == 4 && request.status == 200) {
+    response.open("GET", ajaxUrl, true);
+    // response.getResponseHeader('Content-type', 'application/x-www-form-urlencoded');
+    response.send();
+    response.onreadystatechange = function() {
+      if (response.readyState == 4 && response.status == 200) {
         //option obtenidos del controlador
-        document.querySelector('.comments-container').innerHTML = request.responseText;
+        document.querySelector('.comments-container').innerHTML = response.responseText;
       }
     }
   }
@@ -113,9 +114,14 @@ function fntComent() {
 //   if (document.querySelector('.comments-container')) {
 //     let ajaxUrl = base_url + "Home/getComents";
 //     $.ajax({
+//       dataType: "html",
 //       url: ajaxUrl,
+//       contentType: "application/x-www-form-urlencoded; charset=UTF-8",
 //       success: function(data) {
 //         document.querySelector('.comments-container').innerHTML = data;
+//       },
+//       error: function(data) {
+//         console.log(data);
 //       }
 //     })
 //   }
