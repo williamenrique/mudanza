@@ -45,3 +45,9 @@ define('Host'       , 'smtp.gmail.com');
 define('Username'   , 'william21enrique@gmail.com');
 define('Password'   , 'naca2105');
 define('Port'       , '587');
+
+// define('SMTPSecure' , 'tls');
+// define('Host'       , 'mail.transportemudanzas.cl');
+// define('Username'   , 'enviomail@transportemudanzas.cl');
+// define('Password'   , 'Prueba12');
+// define('Port'       , '587');

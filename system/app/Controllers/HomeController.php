@@ -27,7 +27,49 @@ class Home extends Controllers{
 
 	// user php mailer
 	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
-	public function sendEmail(){
+		public function sendEmail(){
+		require_once 'system/core/PHPMailer/PHPMailerAutoload.php';
+
+		if($_POST){
+			$nombre = strClean(ucwords($_POST['nombre']));
+			$email = strClean(strtolower($_POST['email']));
+			$asunto = strClean(ucwords($_POST['asunto']));
+			$mensaje = strClean(ucwords($_POST['mensaje']));
+			$destinatario = $email;
+			if(empty($nombre) || empty($email ) || empty($asunto ) || empty($mensaje )){
+			$arrResponse = array("status" => false, "msg" => "Debe llenar los campos");
+			}else{
+	      
+				$mail = new PHPMailer;
+
+				//$mail->SMTPDebug = 3;                               // Enable verbose debug output
+
+				$mail->isSMTP();                                      // Set mailer to use SMTP
+				$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+				$mail->SMTPAuth = true;                               // Enable SMTP authentication
+				$mail->Username = 'william21enrique@gmail.com';                 // SMTP username
+				$mail->Password = 'naca2105';                           // SMTP password
+				$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+				$mail->Port = 465; 
+
+				$mail->setFrom('william21enrique@gmail.com', 'Mailer');
+				$mail->addAddress($email, $nombre);     
+
+				$mail->Subject = $asunto;
+				$mail->Body    = $mensaje;
+
+				if(!$mail->send()) {
+					$arrResponse = array("status" => false, "msg" => "A ocurrio un error en la configuración");
+						// echo 'Error del mensaje: ' . $mail->ErrorInfo;
+				} else {
+					$arrResponse = array("status" => true, "msg" => "Gracias por comunicarte con nosotros ".$nombre." pronto seras contactado por nosotros.");
+				}
+			}
+			echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
+		}
+		die();
+	}
+	public function sendEmai(){
 		require_once 'system/core/PHPMailer/send_mail.php';
 		if($_POST){
 			$nombre = strClean(ucwords($_POST['nombre']));
