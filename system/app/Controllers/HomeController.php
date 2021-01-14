@@ -28,16 +28,19 @@ class Home extends Controllers{
 	// user php mailer
 	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
 	public function sendEmail(){
-		$nombre = strClean(ucwords($_POST['nombre']));
-		$email = strClean(strtolower($_POST['email']));
-		$asunto = strClean(ucwords($_POST['asunto']));
-		$mensaje = strClean(ucwords($_POST['mensaje']));
-
-		$successEmail = email($nombre, $email, $asunto, $mensaje);
-		if($successEmail){
-			$this->replyEmail($nombre, $email, $mensaje);
+		if($_POST){
+			echo $nombre;
+			$nombre = strClean(ucwords($_POST['nombre']));
+			$email = strClean(strtolower($_POST['email']));
+			$asunto = strClean(ucwords($_POST['asunto']));
+			$mensaje = strClean(ucwords($_POST['mensaje']));
+			
+			$successEmail = email($nombre, $email, $asunto, $mensaje);
+			if($successEmail){
+				$this->replyEmail($nombre, $email, $mensaje);
+			}
 		}
-		die();
+	die();
 	}
 
 	function replyEmail(string $nombre, string $email, string $mensaje){
