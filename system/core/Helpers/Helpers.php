@@ -192,7 +192,7 @@ function cargar_menu (string $strNick){
 }
 
 
-function email(string $nombre, string $email, string $asunto, string $mensaje){
+function demail(string $nombre, string $email, string $asunto, string $mensaje){
 	require_once 'system/core/PHPMailer/send_mail.php';
 	$destinatario = $email;
 	$asunto = $asunto;

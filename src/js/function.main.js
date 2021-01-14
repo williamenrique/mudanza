@@ -7,30 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
     //agregar el evento al boton del formulario
     formEmail.onsubmit = function(e) {
       e.preventDefault();
-      //     btnEnvio.innerHTML = `<button class="btn btn-primary" type="button" disabled>
-      // 	<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-      // 	Loading...
-      // </button>`;
 
       let request = window.XMLHttpRequest ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
       let ajaxUrl = base_url + 'Home/sendEmail';
       //creamos un objeto del formulario con los datos haciendo referencia a formData
-      // var formData = new FormData(formEmail);
+      let formData = new FormData(formEmail);
       //prepara los datos por ajax preparando el dom
-      // request.open('POST', ajaxUrl);
       //envio de datos del formulario que se almacena enla variable
-      // request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      // console.log(formData);
-      // request.send(formData);
-      var formElement = document.getElementById("formEmail");
-      request.open("POST", ajaxUrl);
-      request.send(new FormData(formElement));
-      let txtNombre = document.querySelector('#nombre').value;
-      let txtEmail = document.querySelector('#email').value;
-      let txtAsunto = document.querySelector('#asunto').value;
-      let txtMensaje = document.querySelector('#mensaje').value;
-      // let data = 'nombre=' + txtNombre + '&email=' + txtEmail + '&asunto=' + txtAsunto + '&mensaje=' + txtMensaje;
-      // request.send(data);
+      request.open('POST', ajaxUrl, true);
+      request.send(formData);
       //obtenemos los resultados
       request.onreadystatechange = function() {
         if (request.readyState == 4 && request.status == 200) {
@@ -38,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
           let objData = JSON.parse(request.responseText);
           if (objData.status) {
             let mensaje = document.querySelector('.sent-message');
-            // mensaje.style.display = 'block';
             mensaje.innerHTML = objData.msg;
             formEmail.reset();
             $('.sent-message').fadeIn(3000).delay(2000).fadeOut(2000);
@@ -57,11 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //agregar el evento al boton del formulario
     formComent.onsubmit = function(e) {
       e.preventDefault();
-      //obenemos todos los valores del formulario
-      let intComentario = document.querySelector('#idComent').value;
-      var strTxtNombre = document.querySelector('#txtNombre').value;
-      var strTxtEmail = document.querySelector('#txtEmail').value;
-      var strtxtMensaje = document.querySelector('#txtMensaje').value;
       /*************************************************
        * creamos el objeto de envio para tipo de navegador
        * hacer una validacion para diferentes navegadores y crear el formato de lectura

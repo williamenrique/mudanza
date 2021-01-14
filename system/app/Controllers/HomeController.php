@@ -28,17 +28,54 @@ class Home extends Controllers{
 	// user php mailer
 	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
 	public function sendEmail(){
+		require_once 'system/core/PHPMailer/send_mail.php';
 		if($_POST){
-			echo $nombre;
 			$nombre = strClean(ucwords($_POST['nombre']));
 			$email = strClean(strtolower($_POST['email']));
 			$asunto = strClean(ucwords($_POST['asunto']));
 			$mensaje = strClean(ucwords($_POST['mensaje']));
-			
-			$successEmail = email($nombre, $email, $asunto, $mensaje);
-			if($successEmail){
-				$this->replyEmail($nombre, $email, $mensaje);
+			$destinatario = $email;
+			if(empty($nombre) || empty($email ) || empty($asunto ) || empty($mensaje )){
+			$arrResponse = array("status" => false, "msg" => "Debe llenar los campos");
+			}else{
+
+				// $successEmail = email($nombre, $email, $asunto, $mensaje);
+				
+				$fecha = formatear_fecha(date('Y-m-d'));
+				$SES_USER = Username;
+				// configuro direccion de envio
+				$mail->setFrom($SES_USER, $nombre);
+				// $mail->setFrom($destinatario, $nom);
+
+				// ASUNTO DEL MENSAJE: Debe trarse de la config del cliente
+				$mail->Subject = $asunto;
+
+				// borro y seteo la direccion de respuesta
+				$mail->clearReplyTos();
+				// $mail->addReplyTo($SES_USER);
+				$mail->addReplyTo($destinatario);
+
+				$message = $mensaje;
+					// asigno el cuerpo a la clase
+				$mail->msgHTML($message);
+
+				// borro y seteo el email del Destinatario
+				$mail->ClearAllRecipients();
+				// $mail->addAddress($destinatario, "");
+				$mail->addAddress($SES_USER, "");
+
+				// Success
+				if ($mail->send()) {
+					$arrResponse = array("status" => true, "msg" => "Gracias por comunicarte con nosotros ".$nombre." pronto seras contactado por nosotros.");
+				} else {
+					$arrResponse = array("status" => false, "msg" => "A ocurrio un error en la configuración");
+				}
+
+				// if($successEmail){
+				// 	$this->replyEmail($nombre, $email, $mensaje);
+				// }
 			}
+			echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 		}
 	die();
 	}

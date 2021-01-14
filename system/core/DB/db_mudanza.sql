@@ -36,6 +36,7 @@ CREATE TABLE `coment_respuesta` (
 
 LOCK TABLES `coment_respuesta` WRITE;
 /*!40000 ALTER TABLE `coment_respuesta` DISABLE KEYS */;
+INSERT INTO `coment_respuesta` VALUES (1,1);
 /*!40000 ALTER TABLE `coment_respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -53,7 +54,7 @@ CREATE TABLE `comentario` (
   `contenido` text DEFAULT NULL,
   `fecha` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -62,6 +63,7 @@ CREATE TABLE `comentario` (
 
 LOCK TABLES `comentario` WRITE;
 /*!40000 ALTER TABLE `comentario` DISABLE KEYS */;
+INSERT INTO `comentario` VALUES (1,'Nknkln','knknkln@gmail.com','Nmknbkjbvh								','2021-01-11 13:33:26');
 /*!40000 ALTER TABLE `comentario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -80,7 +82,7 @@ CREATE TABLE `email` (
   `mensaje` text DEFAULT NULL,
   `fecha` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -89,6 +91,7 @@ CREATE TABLE `email` (
 
 LOCK TABLES `email` WRITE;
 /*!40000 ALTER TABLE `email` DISABLE KEYS */;
+INSERT INTO `email` VALUES (1,'Lkkjk','nmk@jkljjkl.com','Lmljml','Lml','2021-01-11 17:44:52'),(2,'Nknk','william21enrique@gmail.com','Prueba','Probando El Email','2021-01-11 17:45:58');
 /*!40000 ALTER TABLE `email` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -112,6 +115,8 @@ CREATE TABLE `empresa` (
   `instagram` text DEFAULT NULL,
   `twitter` text DEFAULT NULL,
   `location` text DEFAULT NULL,
+  `contacto` varchar(100) DEFAULT NULL,
+  `url` text DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -122,7 +127,7 @@ CREATE TABLE `empresa` (
 
 LOCK TABLES `empresa` WRITE;
 /*!40000 ALTER TABLE `empresa` DISABLE KEYS */;
-INSERT INTO `empresa` VALUES (1,'Transporte JCM','william infante','transportejcm1286@gmail.com','+56 998 4000 97','Titan 4870 estación central, Chile','viajes y mudanzas','todo lo relacionado para sus mudanzas','https://www.facebook.com/williamEnriqe/',NULL,NULL,'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.627653555639!2d-70.70519938509128!3d-33.459006105336805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c488c5ed6511%3A0xfd419656d542e7fd!2sTitan%204870%2C%20Santiago%2C%20Estaci%C3%B3n%20Central%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1606836067472!5m2!1ses-419!2sve');
+INSERT INTO `empresa` VALUES (1,'Transporte JCM','Juan Carlos Matheus ','transportejcm1286@gmail.com','+56 998 4000 97','Titan 4870 estación central, Chile','Transporte y Mudanzas','Nuestra experiencia es el mejor respaldo','https://www.facebook.com/Transportejcm-104536918173737','https://www.instagram.com/transportejcm/',NULL,'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.627653555639!2d-70.70519938509128!3d-33.459006105336805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c488c5ed6511%3A0xfd419656d542e7fd!2sTitan%204870%2C%20Santiago%2C%20Estaci%C3%B3n%20Central%2C%20Regi%C3%B3n%20Metropolitana%2C%20Chile!5e0!3m2!1ses-419!2sve!4v1606836067472!5m2!1ses-419!2sve','contacto@transportemudanzas.cl','https://transportemudanzas.cl/');
 /*!40000 ALTER TABLE `empresa` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -165,7 +170,7 @@ CREATE TABLE `respuesta` (
   `respuesta` text DEFAULT NULL,
   `fecha` datetime DEFAULT current_timestamp(),
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -174,6 +179,7 @@ CREATE TABLE `respuesta` (
 
 LOCK TABLES `respuesta` WRITE;
 /*!40000 ALTER TABLE `respuesta` DISABLE KEYS */;
+INSERT INTO `respuesta` VALUES (1,'Carlos','carlos@gmail.com',',lmkmk								','2021-01-13 15:25:55');
 /*!40000 ALTER TABLE `respuesta` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -186,4 +192,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-12-17 20:55:20
+-- Dump completed on 2021-01-14 16:36:04
