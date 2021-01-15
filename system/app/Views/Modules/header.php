@@ -24,16 +24,7 @@
 						plazos, y en la utilización de un personal altamente especializado y capacitado, generando así, la
 						satisfacción total de nuestros clientes.">
 		<meta name="author" content="Juan Carlos Matheus">
-		<meta property="og:locale" content="es_ES" />
-		<meta property="og:site_name" content="https://transportemudanzas.cl/" />
-
-		<meta property="og:url" content="https://transportemudanzas.cl/" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Viajes, mudanzas y transporte"" />
-	<meta property=" og:description" content="Web de mudanzas y transporte en todo chile post de nuestra empresa. Nuestro compromiso se basa en la calidad de nuestro servicio, en el cumplimiento de los
-						plazos, y en la utilización de un personal altamente especializado y capacitado, generando así, la
-						satisfacción total de nuestros clientes." />
-		<meta property="og:image" content="https://transportemudanzas.cl/src/images/publicidad.jpg" />
+		-->
 		<!-- tags -->
 		<!-- Favicons -->
 		<link href="<?= IMG ?>favicon(1).png" rel="icon">
