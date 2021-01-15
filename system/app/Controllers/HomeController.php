@@ -69,7 +69,7 @@ class Home extends Controllers{
 		}
 		die();
 	}
-	public function sendEmai(){
+	public function sendEma(){
 		require_once 'system/core/PHPMailer/send_mail.php';
 		if($_POST){
 			$nombre = strClean(ucwords($_POST['nombre']));
