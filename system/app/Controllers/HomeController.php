@@ -28,7 +28,7 @@ class Home extends Controllers{
 	// user php mailer
 	// public function sendEmail(string $nombre, string $email, string $asunto, string $mensaje){
 		public function sendEmail(){
-		require_once 'system/core/PHPMailer/PHPMailerAutoload.php';
+		include 'system/core/PHPMailer/PHPMailerAutoload.php';
 
 		if($_POST){
 			$nombre = strClean(ucwords($_POST['nombre']));
@@ -45,12 +45,12 @@ class Home extends Controllers{
 				//$mail->SMTPDebug = 3;                               // Enable verbose debug output
 
 				$mail->isSMTP();                                      // Set mailer to use SMTP
-				$mail->Host = 'smtp.gmail.com';  // Specify main and backup SMTP servers
+				$mail->Host = 'mail.transportemudanzas.cl';  // Specify main and backup SMTP servers
 				$mail->SMTPAuth = true;                               // Enable SMTP authentication
-				$mail->Username = 'william21enrique@gmail.com';                 // SMTP username
-				$mail->Password = 'naca2105';                           // SMTP password
+				$mail->Username = 'enviomail@transportemudanzas.cl';                 // SMTP username
+				$mail->Password = 'Prueba12';                           // SMTP password
 				$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
-				$mail->Port = 465; 
+				$mail->Port = 587; 
 
 				$mail->setFrom('william21enrique@gmail.com', 'Mailer');
 				$mail->addAddress($email, $nombre);     
