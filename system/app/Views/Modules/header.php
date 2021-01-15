@@ -24,7 +24,7 @@
 						plazos, y en la utilización de un personal altamente especializado y capacitado, generando así, la
 						satisfacción total de nuestros clientes.">
 		<meta name="author" content="Juan Carlos Matheus">
-		-->
+
 		<!-- tags -->
 		<!-- Favicons -->
 		<link href="<?= IMG ?>favicon(1).png" rel="icon">
