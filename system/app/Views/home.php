@@ -27,7 +27,7 @@
 
 	<!-- End Team Section -->
 	<!-- ======= Contact Section ======= -->
-	<?php modules('contacto',$data)?>
+
 	<!-- End Contact Section -->
 
 	<!-- ======= Comentario Section ======= -->
